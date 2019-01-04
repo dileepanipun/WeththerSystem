@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="567.0" style="-fx-border-color: #2bcbba; -fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.CompanyPaneController">
+   <children>
+      <JFXTextField fx:id="txtCompaynID" labelFloat="true" layoutX="32.0" layoutY="55.0" onAction="#onActionCompanyID" prefHeight="30.0" prefWidth="129.0" promptText="Company ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="6.0" layoutY="6.0" prefHeight="30.0" prefWidth="557.0" styleClass="labelColur" stylesheets="@../css/CompanyPane.css" text="Manage Company">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="32.0" layoutY="104.0" onAction="#onActionName" prefHeight="30.0" prefWidth="254.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="32.0" layoutY="155.0" onAction="#onActionAddress" prefHeight="30.0" prefWidth="335.0" promptText="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTelephoneNo" labelFloat="true" layoutX="32.0" layoutY="205.0" onAction="#onActionTelephoneNumber" prefHeight="30.0" prefWidth="144.0" promptText="Telephone Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnNew" contentDisplay="GRAPHIC_ONLY" layoutX="404.0" layoutY="193.0" onAction="#btnNewOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/DevicePane.css" text="New" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" contentDisplay="GRAPHIC_ONLY" layoutX="404.0" layoutY="45.0" onAction="#onActionSave" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/DevicePane.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRemove" contentDisplay="GRAPHIC_ONLY" layoutX="404.0" layoutY="94.0" onAction="#btnDeleteOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/DevicePane.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icons8_Remove_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" contentDisplay="GRAPHIC_ONLY" layoutX="404.0" layoutY="143.0" onAction="#btnUpdateOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/DevicePane.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tableComapny" editable="true" layoutX="5.0" layoutY="248.0" onMouseClicked="#getRowDetail" prefHeight="183.0" prefWidth="557.0" stylesheets="@../css/CompanyPane.css">
+        <columns>
+          <TableColumn prefWidth="83.0" text="Company ID" />
+          <TableColumn prefWidth="152.0" text="Name" />
+            <TableColumn prefWidth="233.0" text="Address" />
+            <TableColumn prefWidth="86.0" text="Telephone" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="516.0" layoutY="6.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" styleClass="closeButton" stylesheets="@../css/CompanyPane.css" textFill="RED">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

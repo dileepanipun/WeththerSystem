@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1085.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.SearchPaneController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1085.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/backgroundAbcstrackt.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="5.0" prefHeight="36.0" prefWidth="1074.0" styleClass="labelColur" stylesheets="@../css/SearchPane.css" text="Synop Message And Other Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="41.0" layoutY="62.0" opacity="0.74" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="232.0" layoutY="61.0" opacity="0.74" prefHeight="34.0" prefWidth="186.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="440.0" layoutY="60.0" opacity="0.74" prefHeight="34.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <JFXTextField fx:id="txtWetherID" layoutX="47.0" layoutY="59.0" prefHeight="30.0" prefWidth="160.0" promptText="Wether ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateWetherDate" layoutX="241.0" layoutY="60.0" promptText="Date" />
+      <JFXComboBox fx:id="comboTimeZone" labelFloat="true" layoutX="447.0" layoutY="58.0" prefHeight="30.0" prefWidth="198.0" promptText="Time Zone" />
+      <JFXButton layoutX="887.0" layoutY="165.0" onAction="#showBarometer" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Barometer" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="887.0" layoutY="225.0" onAction="#showThermometer" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Thermometer" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="887.0" layoutY="289.0" onAction="#showHumidity" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Humidity" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="887.0" layoutY="351.0" onAction="#showWind" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Wind" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="887.0" layoutY="413.0" onAction="#showCloud" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Cloud" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="887.0" layoutY="474.0" onAction="#showRainSea" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Rain &amp; Sea" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tableWether" layoutX="19.0" layoutY="131.0" onMouseClicked="#selectWether" prefHeight="464.0" prefWidth="858.0" styleClass="column-header" stylesheets="@../css/SearchPane.css">
+         <columns>
+            <TableColumn prefWidth="215.0" resizable="false" text="Wether ID" />
+            <TableColumn prefWidth="215.0" text="Reg Date" />
+            <TableColumn prefWidth="215.0" text="Time Zone" />
+            <TableColumn prefWidth="215.0" text="RegisterI ID" />
+         </columns></TableView>
+   </children>
+</AnchorPane>

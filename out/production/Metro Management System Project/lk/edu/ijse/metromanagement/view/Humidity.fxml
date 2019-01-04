@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.HumidityPaneController">
+   <children>
+      <Label layoutX="5.0" layoutY="5.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Humidity Vapour Pressure" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="82.0" layoutY="36.0" prefHeight="30.0" prefWidth="47.0" text="Current">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="74.0" prefHeight="30.0" prefWidth="77.0" text="Max. Temps.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="110.0" prefHeight="30.0" prefWidth="75.0" text="Min. Temps.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVaporPressure_Current" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="36.0" onAction="#vaporPressure_Current_OnAction" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVaporPressure_MaxTemps" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="71.0" onAction="#vaporPressure_MaxTemps_OnAction" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVaporPrressure_MinTemps" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="105.0" onAction="#vaporPressure_MInTemps_OnAction" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="6.0" layoutY="160.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Relative Humidity" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="81.0" layoutY="194.0" prefHeight="30.0" prefWidth="47.0" text="Current">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="226.0" prefHeight="30.0" prefWidth="77.0" text="Max. Temps.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="264.0" prefHeight="30.0" prefWidth="75.0" text="Min. Temps.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRelativeHumidity_Current" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="188.0" onAction="#relativeHumidity_Current_OnAction" prefHeight="30.0" prefWidth="100.0" text="00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRelativeHumidity_MaxTemps" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="224.0" onAction="#relativeHumidity_MaxTemps_OnAction" prefHeight="30.0" prefWidth="100.0" text="00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRelativeHumidity_MinTemps" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="261.0" onAction="#relativeHumidity_MinTemps_OnAction" prefHeight="30.0" prefWidth="100.0" text="00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="6.0" layoutY="305.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Visibility Code Figure" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXTextField fx:id="txtVisibility" alignment="CENTER_RIGHT" layoutX="290.0" layoutY="348.0" onAction="#visibility_OnAction" prefHeight="30.0" prefWidth="89.0" text="00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="81.0" layoutY="351.0" prefHeight="30.0" prefWidth="169.0" text="Visibility Code Figure Value">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="36.0" prefHeight="30.0" prefWidth="39.0" text="[ 27 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="110.0" prefHeight="30.0" prefWidth="39.0" text="[ 29 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="74.0" prefHeight="30.0" prefWidth="39.0" text="[ 28 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="193.0" prefHeight="30.0" prefWidth="39.0" text="[ 30 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="264.0" prefHeight="30.0" prefWidth="39.0" text="[ 32 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="225.0" prefHeight="30.0" prefWidth="39.0" text="[ 31 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="351.0" prefHeight="30.0" prefWidth="39.0" text="[ 33 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

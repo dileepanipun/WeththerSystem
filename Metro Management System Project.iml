@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Log" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Others/Desktop/jfoenix.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Others/Desktop/mysql-connector-java-5.1.23-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Libraries/controlsfx-8.40.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Libraries/libray/com.lowagie.text-2.1.7.jar!/" />
+          <root url="jar://E:/Libraries/libray/commons-beanutils-1.8.3.jar!/" />
+          <root url="jar://E:/Libraries/libray/commons-digester-2.1.jar!/" />
+          <root url="jar://E:/Libraries/libray/itextpdf-5.3.4.jar!/" />
+          <root url="jar://E:/Libraries/libray/jasperreports-6.4.3.jar!/" />
+          <root url="jar://E:/Libraries/libray/jasperreports-javaflow-6.4.3.jar!/" />
+          <root url="jar://E:/Libraries/libray/jcommon-1.0.8.jar!/" />
+          <root url="jar://E:/Libraries/libray/jfreechart-1.0.13.jar!/" />
+          <root url="jar://E:/Libraries/libray/org-apache-commons-logging.jar!/" />
+          <root url="jar://E:/Libraries/libray/org.apache.commons.collections.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://E:/Libraries/libray/itext-2.1.7-src.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

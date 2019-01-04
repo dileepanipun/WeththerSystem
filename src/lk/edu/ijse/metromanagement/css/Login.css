@@ -1,0 +1,8 @@
+.btnHover:hover{
+    -fx-border-color : #a5b1c2;
+    -fx-border-radius: 5;
+}
+
+.btnDefault:default{
+    -fx-border-radius: 16;
+}

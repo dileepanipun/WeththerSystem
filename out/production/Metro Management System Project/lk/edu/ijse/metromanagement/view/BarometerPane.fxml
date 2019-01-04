@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="338.0" prefWidth="432.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.BarometerPaneController">
+   <children>
+      <Label layoutX="52.0" layoutY="37.0" prefHeight="37.0" prefWidth="142.0" text="Attd. Thermometer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="78.0" prefHeight="30.0" prefWidth="144.0" text="As Read in Inches">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="119.0" prefHeight="30.0" prefWidth="248.0" text="Corrected for Station Level in Mbs.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="169.0" prefHeight="30.0" prefWidth="243.0" text="B.P.Corred. for I. E. T. &amp; reduced to">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="190.0" prefHeight="30.0" prefWidth="245.0" text="Std. Gr. &amp; to M. S. L. or nearest ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAttdThermo" alignment="CENTER_RIGHT" layoutX="278.0" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#attdThermoOnAction" prefHeight="30.0" prefWidth="140.0" text="0000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsReadInInches" alignment="CENTER_RIGHT" layoutX="278.0" layoutY="80.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#asReadOnAction" prefHeight="30.0" prefWidth="140.0" text="00.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLevelMbs" alignment="CENTER_RIGHT" layoutX="279.0" layoutY="120.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#levelMBSOnAction" prefHeight="30.0" prefWidth="140.0" text="0000.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtGMLevelMBS" alignment="CENTER_RIGHT" layoutX="278.0" layoutY="210.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#gmLevelMBSOnAction" prefHeight="30.0" prefWidth="140.0" text="0000.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="5.0" layoutY="4.0" prefHeight="30.0" prefWidth="422.0" style="-fx-background-color: #2bcbba;" text="Barometer Values">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="57.0" layoutY="250.0" prefHeight="30.0" prefWidth="161.0" text="Barometer Tendancy">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtBaroTendancy" alignment="CENTER_RIGHT" layoutX="278.0" layoutY="254.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#tendencyOnAction" prefHeight="30.0" prefWidth="142.0" text="00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="54.0" layoutY="212.0" prefHeight="30.0" prefWidth="140.0" text="G. Km. Level in Mbs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="171.0" prefHeight="30.0" prefWidth="39.0" text="[ 06 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="41.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="79.0" prefHeight="30.0" prefWidth="39.0" text="[ 04 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="119.0" prefHeight="30.0" prefWidth="39.0" text="[ 05 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="250.0" prefHeight="30.0" prefWidth="39.0" text="[ 07 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnUpdate" fx:id="btnUpdate" contentDisplay="GRAPHIC_ONLY" layoutX="5.0" layoutY="296.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="422.0" style="-fx-background-color: gray;" stylesheets="@../css/BarometerPane.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="380.0" layoutY="4.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="RED">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="closeButton" />
+            <String fx:value="closeButtonPressed" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

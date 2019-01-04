@@ -1,0 +1,21 @@
+. {
+
+}
+
+.closeButton:hover{
+    -fx-background-color: #eb3b5a;
+    -fx-background-radius: 0;
+}
+
+.closeButtonPressed:pressed{
+    -fx-background-color: #eb3b5a;
+    -fx-background-radius: 0;
+}
+
+#btnUpdate:hover{
+    -fx-background-color: #2bcbba;
+}
+
+.labelColur{
+    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
+}

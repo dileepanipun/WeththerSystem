@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1085.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/forcastWallpaper.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="7.0" layoutY="8.0" opacity="0.25" prefHeight="585.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="404.0" layoutY="355.0" opacity="0.25" prefHeight="238.0" prefWidth="313.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="7.0" layoutY="208.0" opacity="0.47" prefHeight="99.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="109.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="110.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="282.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="282.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="110.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="282.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <Label layoutX="17.0" layoutY="16.0" mouseTransparent="true" prefHeight="47.0" prefWidth="355.0" text="Comfirt level Desc" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Separator layoutX="17.0" layoutY="49.0" mouseTransparent="true" prefHeight="16.0" prefWidth="372.0" />
+      <Label layoutX="410.0" layoutY="14.0" prefHeight="47.0" prefWidth="169.0" text="Barometer" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="635.0" layoutY="14.0" prefHeight="47.0" prefWidth="169.0" text="Temperature" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="861.0" layoutY="14.0" prefHeight="47.0" prefWidth="169.0" text="Wind" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="411.0" layoutY="185.0" prefHeight="47.0" prefWidth="169.0" text="Humidity" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="636.0" layoutY="185.0" prefHeight="47.0" prefWidth="169.0" text="Cloud State" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="862.0" layoutY="185.0" prefHeight="47.0" prefWidth="169.0" text="Rain And Sea" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label fx:id="lblCLDtemp" alignment="CENTER_RIGHT" layoutX="191.0" layoutY="219.0" mouseTransparent="true" prefHeight="66.0" prefWidth="180.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="53.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="872.0" layoutY="49.0" prefHeight="25.0" prefWidth="193.0" text="Direction" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="861.0" layoutY="118.0" prefHeight="25.0" prefWidth="204.0" text="Average Speed of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWind" alignment="CENTER_RIGHT" layoutX="1011.0" layoutY="142.0" prefHeight="25.0" prefWidth="55.0" text="Km/h" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCloud" alignment="CENTER_RIGHT" layoutX="783.0" layoutY="315.0" prefHeight="25.0" prefWidth="55.0" text="type" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="60.0" prefHeight="25.0" prefWidth="90.0" text="Current Dry" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="84.0" prefHeight="25.0" prefWidth="90.0" text="Current Wet" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTempCurDry" alignment="CENTER_RIGHT" layoutX="748.0" layoutY="58.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTempCurWet" alignment="CENTER_RIGHT" layoutX="748.0" layoutY="82.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTemperature" alignment="CENTER_RIGHT" layoutX="748.0" layoutY="120.0" prefHeight="47.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="636.0" layoutY="118.0" prefHeight="25.0" prefWidth="119.0" text="Average Of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="59.0" prefHeight="25.0" prefWidth="90.0" text="In Inches" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBaroInInches" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="57.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBarometer" alignment="CENTER_RIGHT" layoutX="524.0" layoutY="120.0" prefHeight="47.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="412.0" layoutY="118.0" prefHeight="25.0" prefWidth="119.0" text="Average Of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="896.0" layoutY="76.0" prefHeight="25.0" prefWidth="169.0" text="North West" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="220.0" prefHeight="25.0" prefWidth="193.0" text="Comfirt Level" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="644.0" layoutY="220.0" prefHeight="25.0" prefWidth="193.0" text="Cloud Type" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="671.0" layoutY="251.0" prefHeight="25.0" prefWidth="169.0" text="Rough" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="875.0" layoutY="219.0" prefHeight="25.0" prefWidth="90.0" text="Last Obs." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="875.0" layoutY="249.0" prefHeight="25.0" prefWidth="90.0" text="Sea State" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLastObs" alignment="CENTER_RIGHT" layoutX="973.0" layoutY="217.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSeaState" alignment="CENTER_RIGHT" layoutX="973.0" layoutY="247.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRainLastObs" alignment="CENTER_RIGHT" layoutX="976.0" layoutY="293.0" prefHeight="47.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="864.0" layoutY="289.0" prefHeight="25.0" prefWidth="119.0" text="Average Of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="291.0" prefHeight="25.0" prefWidth="119.0" text="Average Of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="291.0" prefHeight="25.0" prefWidth="119.0" text="Average Of day" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="prIComfirtLevel" layoutX="19.0" layoutY="68.0" mouseTransparent="true" opacity="0.87" prefHeight="225.0" prefWidth="204.0" progress="0.09">
+         <effect>
+            <DropShadow color="#00ccfa" radius="15.93" spread="0.08" width="44.72" />
+         </effect>
+      </ProgressIndicator>
+      <JFXButton layoutX="404.0" layoutY="379.0" opacity="0.47" prefHeight="66.0" prefWidth="313.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <Label layoutX="414.0" layoutY="389.0" prefHeight="47.0" prefWidth="291.0" text="Today Attendance" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="414.0" layoutY="449.0" prefHeight="25.0" prefWidth="158.0" text="Manager " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="483.0" prefHeight="25.0" prefWidth="158.0" text="System User" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="519.0" prefHeight="25.0" prefWidth="158.0" text="Labors count" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="553.0" prefHeight="25.0" prefWidth="158.0" text="All" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="578.0" layoutY="455.0" prefHeight="25.0" prefWidth="130.0" text="MR. Alawathugoda" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="609.0" layoutY="489.0" prefHeight="25.0" prefWidth="99.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="609.0" layoutY="525.0" prefHeight="25.0" prefWidth="99.0" text="5" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="609.0" layoutY="559.0" prefHeight="25.0" prefWidth="99.0" text="7" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="270.0" mouseTransparent="true" prefHeight="25.0" prefWidth="90.0" text="Comfot Level" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="66.0" mouseTransparent="true" prefHeight="25.0" prefWidth="151.0" text="Comfot Level" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="315.0" mouseTransparent="true" prefHeight="25.0" prefWidth="365.0" text="Other Details" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="218.0" layoutY="271.0" prefHeight="25.0" prefWidth="151.0" text="Temperature" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="7.0" layoutY="482.0" opacity="0.47" prefHeight="99.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <Separator layoutX="16.0" layoutY="520.0" mouseTransparent="true" prefHeight="16.0" prefWidth="372.0" />
+      <Label layoutX="17.0" layoutY="532.0" mouseTransparent="true" text="Mon" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="532.0" mouseTransparent="true" text="Tue" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="534.0" mouseTransparent="true" text="Wed" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="534.0" mouseTransparent="true" text="Thu" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="533.0" mouseTransparent="true" text="Fri" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="534.0" mouseTransparent="true" text="Sat" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="534.0" mouseTransparent="true" text="Sun" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="555.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="555.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="557.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="557.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="556.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="557.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="557.0" mouseTransparent="true" text="00" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="347.0" layoutY="536.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Combo_Chart_52px_1.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="724.0" layoutY="355.0" opacity="0.25" prefHeight="238.0" prefWidth="348.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="724.0" layoutY="379.0" opacity="0.47" prefHeight="66.0" prefWidth="348.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <Label layoutX="734.0" layoutY="389.0" prefHeight="47.0" prefWidth="291.0" text="Activated Devices" textFill="WHITE">
+         <font>
+            <Font name="Quarca-ExtLig" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1e" />
+         </effect>
+      </Label>
+      <Label layoutX="734.0" layoutY="449.0" prefHeight="25.0" prefWidth="158.0" text="Currnt Running Devices" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="734.0" layoutY="483.0" prefHeight="25.0" prefWidth="158.0" text="Types Count" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="734.0" layoutY="519.0" prefHeight="25.0" prefWidth="158.0" text="Repeared Devices" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="734.0" layoutY="553.0" prefHeight="25.0" prefWidth="158.0" text="Need To Repere" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="947.0" layoutY="455.0" prefHeight="25.0" prefWidth="83.0" text="00" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="929.0" layoutY="489.0" prefHeight="25.0" prefWidth="99.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="929.0" layoutY="525.0" prefHeight="25.0" prefWidth="99.0" text="5" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="929.0" layoutY="559.0" prefHeight="25.0" prefWidth="99.0" text="7" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="540.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Barometer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="521.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Humidity_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="630.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="372.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/celcius.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="790.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Thermometer_Automation_64px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblHumdCur" alignment="CENTER_RIGHT" layoutX="561.0" layoutY="315.0" prefHeight="25.0" prefWidth="55.0" text="0.00" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="779.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Cloud_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="931.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Windy_Weather_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="1024.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8_Rain_64px_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="426.0" layoutY="79.0" prefHeight="25.0" prefWidth="90.0" text="Station Level" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stationLevel" alignment="CENTER_RIGHT" layoutX="524.0" layoutY="77.0" prefHeight="25.0" prefWidth="90.0" text="00.0 C" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

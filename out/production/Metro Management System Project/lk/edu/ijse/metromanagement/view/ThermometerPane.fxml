@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.ThermometerPaneController">
+   <children>
+      <Label layoutX="6.0" layoutY="5.0" prefHeight="30.0" prefWidth="279.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature As Read">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="78.0" layoutY="43.0" prefHeight="30.0" prefWidth="72.0" text="Current Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="83.0" prefHeight="30.0" prefWidth="76.0" text="Current Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="125.0" prefHeight="30.0" prefWidth="52.0" text="Max Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="165.0" prefHeight="30.0" prefWidth="56.0" text="Max Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="202.0" prefHeight="30.0" prefWidth="50.0" text="Min Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="242.0" prefHeight="30.0" prefWidth="53.0" text="Min Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="287.0" prefHeight="30.0" prefWidth="84.0" text="Min On Grass">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="321.0" prefHeight="30.0" prefWidth="279.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature After Resetting">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="73.0" layoutY="369.0" text="Current Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="412.0" text="Current Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAsRead_CurrentDry" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="37.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_CurrentWet" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="77.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_MaxDry" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="119.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_MaxWet" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="159.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_MinDry" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="196.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_MinWet" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="236.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAsRead_MinOnGrass" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="281.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAfterReseting_CurrentDry" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="363.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAfterReseting_CurrentWet" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="404.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="26.0" layoutY="166.0" prefHeight="30.0" prefWidth="39.0" text="[ 11 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="44.0" prefHeight="30.0" prefWidth="39.0" text="[ 08 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="86.0" prefHeight="30.0" prefWidth="39.0" text="[ 09 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="127.0" prefHeight="30.0" prefWidth="39.0" text="[ 10 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="203.0" prefHeight="30.0" prefWidth="39.0" text="[ 12 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="242.0" prefHeight="30.0" prefWidth="39.0" text="[ 13 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="286.0" prefHeight="30.0" prefWidth="39.0" text="[ 14 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="363.0" prefHeight="30.0" prefWidth="39.0" text="[ 15 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="407.0" prefHeight="30.0" prefWidth="39.0" text="[ 16 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="45.0" text="Current Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="86.0" text="Current Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="124.0" text="Max Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="164.0" text="Max Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="202.0" text="Min Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="242.0" text="Min Wet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="278.0" text="Min On Grass">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="5.0" prefHeight="30.0" prefWidth="323.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature Index Correction">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXTextField fx:id="txtIndexCorr_CurDry" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="38.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_CurrentWet" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="79.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_MaxDry" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="117.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_MaxWet" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="157.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_MinDry" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="195.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_MinWet" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="235.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIndexCorr_MinOnGrass" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="270.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="292.0" layoutY="308.0" prefHeight="30.0" prefWidth="316.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Dew Point Temperature">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="366.0" layoutY="351.0" text="Current Dry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="388.0" text="Max. Temperature">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="427.0" text="Min. Temperature">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDewPoint_CurrDry" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="339.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDewPoint_MaxTemp" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="379.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDewPoint_MinTemp" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="418.0" prefHeight="30.0" prefWidth="100.0" text="000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="314.0" layoutY="162.0" prefHeight="30.0" prefWidth="39.0" text="[ 20 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="40.0" prefHeight="30.0" prefWidth="39.0" text="[ 17 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="82.0" prefHeight="30.0" prefWidth="39.0" text="[ 18 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="123.0" prefHeight="30.0" prefWidth="39.0" text="[ 19 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="199.0" prefHeight="30.0" prefWidth="39.0" text="[ 21 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="238.0" prefHeight="30.0" prefWidth="39.0" text="[ 22 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="276.0" prefHeight="30.0" prefWidth="39.0" text="[ 23 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="345.0" prefHeight="30.0" prefWidth="39.0" text="[ 24 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="382.0" prefHeight="30.0" prefWidth="39.0" text="[ 25 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="421.0" prefHeight="30.0" prefWidth="39.0" text="[ 26 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="559.0" layoutY="5.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="RED">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="closeButton" />
+            <String fx:value="closeButtonPressed" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton id="btnUpdate" fx:id="btnUpdate" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="459.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/BarometerPane.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

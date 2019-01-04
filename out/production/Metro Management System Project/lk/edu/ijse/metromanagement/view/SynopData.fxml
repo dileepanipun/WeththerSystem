@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="1085.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.SynopDataController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1085.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/backgroundAbcstrackt.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="187.0" layoutY="52.0" opacity="0.74" prefHeight="34.0" prefWidth="181.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="377.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="181.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="564.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="173.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <JFXTabPane fx:id="tabPane" layoutX="5.0" layoutY="84.0" prefHeight="521.0" prefWidth="908.0" stylesheets="@../css/SynopDataPane.css" tabClosingPolicy="ALL_TABS">
+         <tabs>
+            <Tab text="Barometer ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Pressure_Gauge_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="7.0" layoutY="4.0" prefHeight="470.0" prefWidth="447.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="62.0" layoutY="47.0" prefHeight="37.0" prefWidth="142.0" text="Attd. Thermometer">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="62.0" layoutY="88.0" prefHeight="30.0" prefWidth="144.0" text="As Read in Inches">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="62.0" layoutY="129.0" prefHeight="30.0" prefWidth="248.0" text="Corrected for Station Level in Mbs.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="64.0" layoutY="179.0" prefHeight="30.0" prefWidth="243.0" text="B.P.Corred. for I. E. T. &amp; reduced to">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="64.0" layoutY="200.0" prefHeight="30.0" prefWidth="245.0" text="Std. Gr. &amp; to M. S. L. or nearest ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtAttdThermo" alignment="CENTER" layoutX="309.0" layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="100.0" styleClass="jfx-date-picker">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsReadInInches" alignment="CENTER" layoutX="309.0" layoutY="90.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="100.0" text="00.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtLevelMbs" alignment="CENTER" layoutX="310.0" layoutY="130.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="100.0" text="0000.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtGMLevelMBS" alignment="CENTER" layoutX="309.0" layoutY="220.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="100.0" text="0000.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="8.0" layoutY="14.0" prefHeight="30.0" prefWidth="422.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Barometer Values" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="67.0" layoutY="260.0" prefHeight="30.0" prefWidth="161.0" text="Barometer Tendancy">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtBaroTendancy" alignment="CENTER" layoutX="306.0" layoutY="264.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="105.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="64.0" layoutY="222.0" prefHeight="30.0" prefWidth="140.0" text="G. Km. Level in Mbs">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="181.0" prefHeight="30.0" prefWidth="39.0" text="[ 06 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="51.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="89.0" prefHeight="30.0" prefWidth="39.0" text="[ 04 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="129.0" prefHeight="30.0" prefWidth="39.0" text="[ 05 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="28.0" layoutY="260.0" prefHeight="30.0" prefWidth="39.0" text="[ 07 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="464.0" layoutY="4.0" prefHeight="470.0" prefWidth="438.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="414.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature As Read" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="82.0" layoutY="48.0" prefHeight="30.0" prefWidth="72.0" text="Current Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="83.0" layoutY="88.0" prefHeight="30.0" prefWidth="76.0" text="Current Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="82.0" layoutY="130.0" prefHeight="30.0" prefWidth="52.0" text="Max Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="81.0" layoutY="170.0" prefHeight="30.0" prefWidth="56.0" text="Max Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="83.0" layoutY="207.0" prefHeight="30.0" prefWidth="50.0" text="Min Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="82.0" layoutY="247.0" prefHeight="30.0" prefWidth="53.0" text="Min Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="80.0" layoutY="292.0" prefHeight="30.0" prefWidth="84.0" text="Min On Grass">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="333.0" prefHeight="30.0" prefWidth="416.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature After Resetting" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="77.0" layoutY="374.0" text="Current Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="76.0" layoutY="417.0" text="Current Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtAsRead_CurrentDry" alignment="CENTER" layoutX="297.0" layoutY="42.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_CurrentWet" alignment="CENTER" layoutX="297.0" layoutY="82.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_MaxDry" alignment="CENTER" layoutX="297.0" layoutY="124.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_MaxWet" alignment="CENTER" layoutX="297.0" layoutY="164.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_MinDry" alignment="CENTER" layoutX="297.0" layoutY="201.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_MinWet" alignment="CENTER" layoutX="297.0" layoutY="241.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAsRead_MinOnGrass" alignment="CENTER" layoutX="297.0" layoutY="286.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAfterReseting_CurrentDry" alignment="CENTER" layoutX="297.0" layoutY="368.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtAfterReseting_CurrentWet" alignment="CENTER" layoutX="297.0" layoutY="409.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="30.0" layoutY="171.0" prefHeight="30.0" prefWidth="39.0" text="[ 11 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="49.0" prefHeight="30.0" prefWidth="39.0" text="[ 08 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="91.0" prefHeight="30.0" prefWidth="39.0" text="[ 09 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="132.0" prefHeight="30.0" prefWidth="39.0" text="[ 10 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="208.0" prefHeight="30.0" prefWidth="39.0" text="[ 12 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="247.0" prefHeight="30.0" prefWidth="39.0" text="[ 13 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="291.0" prefHeight="30.0" prefWidth="39.0" text="[ 14 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="28.0" layoutY="368.0" prefHeight="30.0" prefWidth="39.0" text="[ 15 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="412.0" prefHeight="30.0" prefWidth="39.0" text="[ 16 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabTempNHumidity" text="Temp &amp; Humidity">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Thermometer_Automation_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="467.0" layoutY="3.0" prefHeight="470.0" prefWidth="437.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="10.0" layoutY="11.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Humidity Vapour Pressure" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="87.0" layoutY="42.0" prefHeight="30.0" prefWidth="47.0" text="Current">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="88.0" layoutY="80.0" prefHeight="30.0" prefWidth="77.0" text="Max. Temps.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="88.0" layoutY="116.0" prefHeight="30.0" prefWidth="75.0" text="Min. Temps.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtVaporPressure_Current" alignment="CENTER" layoutX="290.0" layoutY="42.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtVaporPressure_MaxTemps" alignment="CENTER" layoutX="290.0" layoutY="77.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtVaporPrressure_MinTemps" alignment="CENTER" layoutX="290.0" layoutY="111.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="11.0" layoutY="166.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Relative Humidity" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="86.0" layoutY="200.0" prefHeight="30.0" prefWidth="47.0" text="Current">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="86.0" layoutY="232.0" prefHeight="30.0" prefWidth="77.0" text="Max. Temps.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="85.0" layoutY="270.0" prefHeight="30.0" prefWidth="75.0" text="Min. Temps.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtRelativeHumidity_Current" alignment="CENTER" layoutX="290.0" layoutY="194.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtRelativeHumidity_MaxTemps" alignment="CENTER" layoutX="290.0" layoutY="230.0" prefHeight="30.0" prefWidth="100.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtRelativeHumidity_MinTemps" alignment="CENTER" layoutX="290.0" layoutY="267.0" prefHeight="30.0" prefWidth="100.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="11.0" layoutY="311.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Visibility Code Figure" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXTextField fx:id="txtVisibility" alignment="CENTER" layoutX="295.0" layoutY="354.0" prefHeight="30.0" prefWidth="89.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="86.0" layoutY="357.0" prefHeight="30.0" prefWidth="169.0" text="Visibility Code Figure Value">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="42.0" prefHeight="30.0" prefWidth="39.0" text="[ 27 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="116.0" prefHeight="30.0" prefWidth="39.0" text="[ 29 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="80.0" prefHeight="30.0" prefWidth="39.0" text="[ 28 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="199.0" prefHeight="30.0" prefWidth="39.0" text="[ 30 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="270.0" prefHeight="30.0" prefWidth="39.0" text="[ 32 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="231.0" prefHeight="30.0" prefWidth="39.0" text="[ 31 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="357.0" prefHeight="30.0" prefWidth="39.0" text="[ 33 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="6.0" layoutY="3.0" prefHeight="470.0" prefWidth="454.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="84.0" layoutY="48.0" text="Current Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="83.0" layoutY="89.0" text="Current Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="85.0" layoutY="127.0" text="Max Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="84.0" layoutY="167.0" text="Max Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="86.0" layoutY="205.0" text="Min Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="85.0" layoutY="245.0" text="Min Wet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="86.0" layoutY="281.0" text="Min On Grass">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="7.0" layoutY="8.0" prefHeight="30.0" prefWidth="437.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature Index Correction" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXTextField fx:id="txtIndexCorr_CurDry" alignment="CENTER" layoutX="311.0" layoutY="41.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_CurrentWet" alignment="CENTER" layoutX="311.0" layoutY="82.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_MaxDry" alignment="CENTER" layoutX="311.0" layoutY="120.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_MaxWet" alignment="CENTER" layoutX="311.0" layoutY="160.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_MinDry" alignment="CENTER" layoutX="311.0" layoutY="198.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_MinWet" alignment="CENTER" layoutX="311.0" layoutY="238.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtIndexCorr_MinOnGrass" alignment="CENTER" layoutX="311.0" layoutY="273.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="8.0" layoutY="309.0" prefHeight="30.0" prefWidth="437.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Dew Point Temperature" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="84.0" layoutY="354.0" text="Current Dry">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="83.0" layoutY="391.0" text="Max. Temperature">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="84.0" layoutY="430.0" text="Min. Temperature">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtDewPoint_CurrDry" alignment="CENTER" layoutX="311.0" layoutY="342.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtDewPoint_MaxTemp" alignment="CENTER" layoutX="311.0" layoutY="382.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtDewPoint_MinTemp" alignment="CENTER" layoutX="311.0" layoutY="421.0" prefHeight="30.0" prefWidth="100.0" text="000">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="32.0" layoutY="165.0" prefHeight="30.0" prefWidth="39.0" text="[ 20 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="43.0" prefHeight="30.0" prefWidth="39.0" text="[ 17 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="85.0" prefHeight="30.0" prefWidth="39.0" text="[ 18 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="126.0" prefHeight="30.0" prefWidth="39.0" text="[ 19 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="202.0" prefHeight="30.0" prefWidth="39.0" text="[ 21 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="241.0" prefHeight="30.0" prefWidth="39.0" text="[ 22 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="31.0" layoutY="279.0" prefHeight="30.0" prefWidth="39.0" text="[ 23 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="348.0" prefHeight="30.0" prefWidth="39.0" text="[ 24 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="385.0" prefHeight="30.0" prefWidth="39.0" text="[ 25 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="424.0" prefHeight="30.0" prefWidth="39.0" text="[ 26 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabRainNWind" text="Rain &amp; Wind">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="8.0" prefHeight="467.0" prefWidth="433.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="13.0" layoutY="14.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Wind Values" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="76.0" layoutY="57.0" prefHeight="25.0" prefWidth="126.0" text="Wind Direction">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="windDrectionTxt" alignment="CENTER" layoutX="299.0" layoutY="48.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="12.0" layoutY="92.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Meter" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="75.0" layoutY="134.0" prefHeight="25.0" prefWidth="153.0" text="FIrst Reading">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="76.0" layoutY="181.0" prefHeight="25.0" prefWidth="153.0" text="Second Reading">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="meterFirstReadTxt" alignment="CENTER" layoutX="300.0" layoutY="125.0" prefHeight="30.0" prefWidth="100.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="meterSecReadTxt" alignment="CENTER" layoutX="299.0" layoutY="174.0" prefHeight="30.0" prefWidth="100.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="11.0" layoutY="215.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Force" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="76.0" layoutY="256.0" prefHeight="32.0" prefWidth="126.0" text="In Km/h">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="forceInKmhTxt" alignment="CENTER" layoutX="299.0" layoutY="250.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="76.0" layoutY="296.0" prefHeight="32.0" prefWidth="103.0" text="In Knots">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="74.0" layoutY="334.0" prefHeight="32.0" prefWidth="211.0" text="Milage Since Previouse 8:30 hrs">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="forceInKnotsTxt" alignment="CENTER" layoutX="300.0" layoutY="292.0" prefHeight="30.0" prefWidth="100.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="milagePreTxt" alignment="CENTER" layoutX="301.0" layoutY="330.0" prefHeight="30.0" prefWidth="100.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="25.0" layoutY="132.0" prefHeight="30.0" prefWidth="39.0" text="[ 35 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="55.0" prefHeight="30.0" prefWidth="39.0" text="[ 34 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="178.0" prefHeight="30.0" prefWidth="39.0" text="[ 36 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="257.0" prefHeight="30.0" prefWidth="39.0" text="[ 37 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="296.0" prefHeight="30.0" prefWidth="39.0" text="[ 38 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="334.0" prefHeight="30.0" prefWidth="39.0" text="[ 39 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="454.0" layoutY="7.0" prefHeight="470.0" prefWidth="450.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="12.0" layoutY="13.0" prefHeight="30.0" prefWidth="433.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Rain As Read" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="74.0" layoutY="49.0" prefHeight="30.0" prefWidth="137.0" text="Since last Observation">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="75.0" layoutY="91.0" prefHeight="30.0" prefWidth="192.0" text="Since Last Routine Observation">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="74.0" layoutY="144.0" prefHeight="30.0" prefWidth="156.0" text="Since Previouse 08.30 hrs">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="77.0" layoutY="186.0" prefHeight="30.0" prefWidth="105.0" text="From January 1st">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtRain_SinceLOB" alignment="CENTER" layoutX="321.0" layoutY="44.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtRain_LRO" alignment="CENTER" layoutX="321.0" layoutY="87.0" prefHeight="30.0" prefWidth="100.0" text="00.00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtRain_PreHrs" alignment="CENTER" layoutX="321.0" layoutY="138.0" prefHeight="30.0" prefWidth="100.0" text="00.00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtRain_FromJanuaray" alignment="CENTER" layoutX="321.0" layoutY="181.0" prefHeight="30.0" prefWidth="100.0" text="00.00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="25.0" layoutY="49.0" prefHeight="30.0" prefWidth="39.0" text="[ 54 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="144.0" prefHeight="30.0" prefWidth="39.0" text="[ 56 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="89.0" prefHeight="30.0" prefWidth="39.0" text="[ 55 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="26.0" layoutY="185.0" prefHeight="30.0" prefWidth="39.0" text="[ 57 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Humidity_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tabCloud" text="Cloud ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="468.0" prefWidth="482.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="9.0" layoutY="45.0" prefHeight="32.0" prefWidth="223.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Values" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="92.0" prefHeight="32.0" prefWidth="203.0" text="Cloud Amount">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="132.0" prefHeight="32.0" prefWidth="194.0" text="Cloud Form">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="164.0" prefHeight="32.0" prefWidth="191.0" text="Direction">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtLCLAmount" alignment="CENTER" layoutX="331.0" layoutY="90.0" prefHeight="30.0" prefWidth="100.0" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtLCLDirection" alignment="CENTER" layoutX="331.0" layoutY="166.0" prefHeight="30.0" prefWidth="100.0" text="00" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtMCLAmount" alignment="CENTER" labelFloat="true" layoutX="121.0" layoutY="257.0" prefHeight="30.0" prefWidth="100.0" promptText="Amount" text="00" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtMCLDirection" alignment="CENTER" labelFloat="true" layoutX="121.0" layoutY="366.0" prefHeight="30.0" prefWidth="100.0" promptText="Direction" text="00" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="hifghCloudAmount" alignment="CENTER" labelFloat="true" layoutX="331.0" layoutY="259.0" prefHeight="30.0" prefWidth="100.0" promptText="Amount" text="00" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="highCloudForm" alignment="CENTER" labelFloat="true" layoutX="331.0" layoutY="368.0" prefHeight="30.0" prefWidth="100.0" promptText="Direction" text="00" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="238.0" layoutY="45.0" prefHeight="32.0" prefWidth="231.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Low" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="211.0" prefHeight="32.0" prefWidth="225.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Medium" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="242.0" layoutY="211.0" prefHeight="32.0" prefWidth="230.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="High" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXComboBox fx:id="comboMCLForm" labelFloat="true" layoutX="121.0" layoutY="311.0" prefHeight="32.0" prefWidth="100.0" promptText="Form" />
+                              <JFXComboBox fx:id="comboLCLForm" layoutX="331.0" layoutY="129.0" prefHeight="32.0" prefWidth="100.0" />
+                              <JFXComboBox fx:id="highCloudFormCombo" labelFloat="true" layoutX="331.0" layoutY="314.0" prefHeight="32.0" prefWidth="100.0" promptText="Form" />
+                              <Label layoutX="29.0" layoutY="265.0" prefHeight="30.0" prefWidth="39.0" text="[ 43 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="319.0" prefHeight="30.0" prefWidth="39.0" text="[ 44 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="366.0" prefHeight="30.0" prefWidth="39.0" text="[ 45 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="92.0" prefHeight="30.0" prefWidth="39.0" text="[ 40 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="131.0" prefHeight="30.0" prefWidth="39.0" text="[ 41 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="169.0" prefHeight="30.0" prefWidth="39.0" text="[ 42 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="266.0" prefHeight="30.0" prefWidth="39.0" text="[ 46 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="323.0" prefHeight="30.0" prefWidth="39.0" text="[ 47 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="260.0" layoutY="370.0" prefHeight="30.0" prefWidth="39.0" text="[ 48 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="494.0" layoutY="5.0" prefHeight="468.0" prefWidth="409.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="13.0" layoutY="15.0" prefHeight="32.0" prefWidth="390.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Signeficant Layer" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXTextField fx:id="txtSGAmount" alignment="CENTER" layoutX="290.0" layoutY="52.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtSGTotal" alignment="CENTER" layoutX="290.0" layoutY="219.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXComboBox fx:id="comboSGForm" layoutX="290.0" layoutY="94.0" prefHeight="30.0" prefWidth="100.0" />
+                              <Label layoutX="26.0" layoutY="58.0" prefHeight="30.0" prefWidth="39.0" text="[ 49 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="26.0" layoutY="98.0" prefHeight="30.0" prefWidth="39.0" text="[ 50 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="26.0" layoutY="219.0" prefHeight="30.0" prefWidth="39.0" text="[ 52 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="68.0" layoutY="57.0" prefHeight="32.0" prefWidth="203.0" text="Layer Amount">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="69.0" layoutY="97.0" prefHeight="32.0" prefWidth="194.0" text="Cloud Form">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="69.0" layoutY="218.0" prefHeight="32.0" prefWidth="191.0" text="Total Amount of">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSGHeigiht" alignment="CENTER" layoutX="290.0" layoutY="140.0" prefHeight="30.0" prefWidth="100.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="26.0" layoutY="141.0" prefHeight="30.0" prefWidth="39.0" text="[ 51 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="69.0" layoutY="140.0" prefHeight="32.0" prefWidth="191.0" text="Height">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="15.0" layoutY="183.0" prefHeight="13.0" prefWidth="387.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="30.0" prefWidth="459.0" text="State of Clouds">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Cloud_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tabSeaState" text="Sea State">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="908.0">
+                     <children>
+                        <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="138.0" prefWidth="442.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="8.0" layoutY="13.0" prefHeight="30.0" prefWidth="426.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="State Of Sea" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="80.0" layoutY="49.0" prefHeight="30.0" prefWidth="134.0" text="Sea Code Figure">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="80.0" layoutY="91.0" prefHeight="30.0" prefWidth="144.0" text="Swell Code Figure">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtCodeFigure_Sea" alignment="CENTER" layoutX="310.0" layoutY="44.0" prefHeight="25.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtCodeFigure_Swell" alignment="CENTER" layoutX="310.0" layoutY="86.0" prefHeight="25.0" prefWidth="100.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="30.0" layoutY="47.0" prefHeight="30.0" prefWidth="39.0" text="[ 58 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="90.0" prefHeight="30.0" prefWidth="39.0" text="[ 59 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="6.0" layoutY="149.0" prefHeight="323.0" prefWidth="441.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="15.0" layoutY="10.0" prefHeight="30.0" prefWidth="423.0" text="Wether Remarks">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="44.0" prefHeight="30.0" prefWidth="413.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Sea" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="91.0" prefHeight="20.0" prefWidth="399.0" text="Note here in sysbols the occunence of phenomena such as gale,">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="159.0" prefHeight="30.0" prefWidth="203.0" text="Past-since previouse observation">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtW1Value" alignment="CENTER" layoutX="363.0" layoutY="184.0" prefHeight="30.0" prefWidth="46.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="23.0" layoutY="125.0" prefHeight="20.0" prefWidth="403.0" text="dustfog, haze, for or mist, dew, forst, tain, snow, ect. with">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="68.0" layoutY="196.0" prefHeight="20.0" prefWidth="169.0" text="W &amp; W1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="presentObs" alignment="CENTER" layoutX="308.0" layoutY="222.0" prefHeight="30.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="65.0" layoutY="230.0" prefHeight="30.0" prefWidth="125.0" text="Present Observation">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="108.0" prefHeight="20.0" prefWidth="393.0" text="squall hall, thunder, lightning, duststorm ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="144.0" prefHeight="20.0" prefWidth="404.0" text="times of commencement and cessation.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="189.0" prefHeight="30.0" prefWidth="39.0" text="[ 60 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="232.0" prefHeight="30.0" prefWidth="39.0" text="[ 61 ]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtWValue" alignment="CENTER" layoutX="307.0" layoutY="184.0" prefHeight="30.0" prefWidth="51.0" text="00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="454.0" layoutY="5.0" prefHeight="467.0" prefWidth="447.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="12.0" prefHeight="30.0" prefWidth="428.0" text="Authorization">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="44.0" prefHeight="30.0" prefWidth="427.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Observer's Initials" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXTextField fx:id="txtCurrentUser" editable="false" layoutX="189.0" layoutY="90.0" prefHeight="24.0" prefWidth="151.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="71.0" layoutY="89.0" prefHeight="31.0" prefWidth="109.0" text="Current User">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Rain_64px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="synopCodePane" text="Synop Code">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="6.0" prefHeight="473.0" prefWidth="900.0" style="-fx-border-color: #2B7873;">
+                           <children>
+                              <Label layoutX="10.0" layoutY="14.0" prefHeight="30.0" prefWidth="881.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Synop Message" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <JFXTextField fx:id="txtSection1" editable="false" layoutX="34.0" layoutY="78.0" text="AAXX">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="20.0" layoutY="53.0" text="Section 01">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSection2" editable="false" layoutX="34.0" layoutY="142.0" prefHeight="30.0" prefWidth="848.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="20.0" layoutY="117.0" text="Section 02">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSection3" editable="false" layoutX="33.0" layoutY="213.0" prefHeight="30.0" prefWidth="848.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="19.0" layoutY="188.0" text="Section 03">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSection5" editable="false" layoutX="33.0" layoutY="277.0" prefHeight="30.0" prefWidth="849.0" text="--">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="19.0" layoutY="252.0" text="Section 05">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="348.0" text="Section 01">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="323.0" minHeight="20.0" prefHeight="20.0" prefWidth="880.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Info">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="375.0" text="iii" />
+                              <Label layoutX="47.0" layoutY="392.0" text="iRixhVV" />
+                              <Label layoutX="113.0" layoutY="349.0" text="Section 02">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="126.0" layoutY="376.0" text="Nddff" />
+                              <Label layoutX="126.0" layoutY="393.0" text="1snTTT" />
+                              <Label layoutX="126.0" layoutY="410.0" text="2snTdTdTd" />
+                              <Label layoutX="126.0" layoutY="427.0" text="4PPPP" />
+                              <Label layoutX="242.0" layoutY="376.0" text="5appp" />
+                              <Label layoutX="242.0" layoutY="393.0" text="6RRRtR" />
+                              <Label layoutX="242.0" layoutY="410.0" text="7wwW1W2" />
+                              <Label layoutX="242.0" layoutY="427.0" text="8NhCLCMCH" />
+                              <Label layoutX="339.0" layoutY="350.0" text="Section 03">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="352.0" layoutY="370.0" text="333" />
+                              <Label layoutX="352.0" layoutY="387.0" text="1snTxTxTx (at 1800 UTC)" />
+                              <Label layoutX="352.0" layoutY="404.0" text="2snTnTnTn (at 0600 UTC)" />
+                              <Label layoutX="352.0" layoutY="421.0" text="3EsnTgTg (at 0600 UTC)" />
+                              <Label layoutX="510.0" layoutY="370.0" text="4E'sss (at 0600 UTC)" />
+                              <Label layoutX="510.0" layoutY="387.0" text="8NsChshs" />
+                              <Label layoutX="510.0" layoutY="404.0" text="9SpSpspsp" />
+                              <Label layoutX="635.0" layoutY="351.0" text="Section 05">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="645.0" layoutY="370.0" text="555" />
+                              <Label layoutX="645.0" layoutY="387.0" text="1V'f'/V'f''f''" />
+                              <Label layoutX="645.0" layoutY="404.0" text="2snTwTwTw" />
+                              <Label layoutX="645.0" layoutY="421.0" text="iiirrr" />
+                              <Separator layoutX="110.0" layoutY="365.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="19.0" />
+                              <Separator layoutX="28.0" layoutY="366.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="19.0" />
+                              <Separator layoutX="628.0" layoutY="366.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="19.0" />
+                              <Separator layoutX="333.0" layoutY="369.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="19.0" />
+                              <Separator layoutX="223.0" layoutY="370.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="19.0" />
+                              <Separator layoutX="491.0" layoutY="370.0" orientation="VERTICAL" prefHeight="95.0" prefWidth="19.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Group_Message_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+         </tabs>
+         <styleClass>
+            <String fx:value="headers-region" />
+            <String fx:value="jfx-tab-pane" />
+         </styleClass>
+      </JFXTabPane>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="232.0" onAction="#btnSaveOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#323232" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="292.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#323232" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="174.0" onAction="#BtnPreviewOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#323232" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/show.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtWetherID" labelFloat="true" layoutX="24.0" layoutY="50.0" prefHeight="30.0" prefWidth="152.0" promptText="Wether ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateTodayDate" defaultColor="#03bca9" editable="false" layoutX="194.0" layoutY="48.0" prefHeight="32.0" prefWidth="173.0" promptText="Date" styleClass="jfx-date-picker" stylesheets="@../css/SynopDataPane.css" />
+      <JFXComboBox fx:id="comboTImePerioud" layoutX="388.0" layoutY="49.0" prefHeight="32.0" prefWidth="152.0" promptText="TIme Perioud" />
+      <JFXTextField fx:id="txtRegID" labelFloat="true" layoutX="571.0" layoutY="50.0" promptText="Regisrer ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="6.0" layoutY="4.0" prefHeight="30.0" prefWidth="1075.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Barometer Values">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

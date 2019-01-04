@@ -1,0 +1,27 @@
+. {
+
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #bcaa11;
+    -fx-stroke-width: 3pt;
+}
+
+.btnPressed:pressed{
+    -fx-background-color: #4b6584;
+}
+
+.labelColur{
+    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
+}
+
+.jfx-date-picker > .jfx-text-field {
+    -jfx-label-float: true;
+}
+

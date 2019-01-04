@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1085.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.DevicePaneContorller">
+    <children>
+      <ImageView fitHeight="605.0" fitWidth="1085.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/backgroundAbcstrackt.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="58.0" opacity="0.74" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="13.0" layoutY="108.0" opacity="0.74" prefHeight="34.0" prefWidth="446.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="14.0" layoutY="160.0" opacity="0.74" prefHeight="34.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="236.0" layoutY="160.0" opacity="0.74" prefHeight="34.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="462.0" layoutY="160.0" opacity="0.74" prefHeight="34.0" prefWidth="252.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="463.0" layoutY="108.0" opacity="0.74" prefHeight="34.0" prefWidth="245.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="723.0" layoutY="108.0" opacity="0.74" prefHeight="34.0" prefWidth="259.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <TableView fx:id="tableDevice" layoutX="5.0" layoutY="288.0" onMouseClicked="#onClickedDeviceTable" prefHeight="310.0" prefWidth="1074.0" stylesheets="@../css/DevicePane.css">
+            <columns>
+                <TableColumn prefWidth="88.0" text="Device ID" />
+                <TableColumn prefWidth="233.0" text="Device Name" />
+                <TableColumn prefWidth="184.0" text="Catogary" />
+                <TableColumn prefWidth="159.0" text="Company" />
+                <TableColumn prefWidth="130.0" text="Warrent Peroud" />
+                <TableColumn minWidth="9.0" prefWidth="121.0" text="Repair Perioud" />
+                <TableColumn minWidth="9.0" prefWidth="155.0" text="Register Date" />
+            </columns>
+         <styleClass>
+            <String fx:value="column-header" />
+            <String fx:value="virtual-flow" />
+            <String fx:value="track" />
+            <String fx:value="track-background" />
+            <String fx:value="table-view" />
+         </styleClass>
+        </TableView>
+        <JFXTextField fx:id="txtDeviceID" focusColor="WHITE" labelFloat="true" layoutX="20.0" layoutY="55.0" onAction="#DeviceIDOnAction" prefHeight="30.0" prefWidth="148.0" promptText="Device ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtDeviceName" focusColor="WHITE" labelFloat="true" layoutX="20.0" layoutY="105.0" onAction="#NameOnAction" prefHeight="30.0" prefWidth="432.0" promptText="Name ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtWarentyPerioud" focusColor="WHITE" labelFloat="true" layoutX="20.0" layoutY="159.0" onAction="#warrentyPeriouudOnAction" prefHeight="30.0" prefWidth="200.0" promptText="Warrent Peroiud In Years">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtRepairPerioud" focusColor="WHITE" labelFloat="true" layoutX="243.0" layoutY="159.0" onAction="#repairPerioudOnAction" prefHeight="30.0" prefWidth="200.0" promptText="Repair Peruioud In Years">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXDatePicker fx:id="datePicRegDate" defaultColor="#45aaf2" layoutX="471.0" layoutY="161.0" prefHeight="28.0" prefWidth="200.0" promptText="Registerd Date" stylesheets="@../css/DevicePane.css">
+            <styleClass>
+                <String fx:value="jfx-date-picker" />
+                <String fx:value="jfx-text-field" />
+            </styleClass>
+        </JFXDatePicker>
+        <Label layoutX="5.0" layoutY="6.0" prefHeight="30.0" prefWidth="1074.0" styleClass="labelColur" stylesheets="@../css/DevicePane.css" text="Devices">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+        </Label>
+        <JFXComboBox fx:id="comboCompanies" focusColor="#45aaf2" labelFloat="true" layoutX="730.0" layoutY="105.0" prefHeight="30.0" prefWidth="200.0" promptText="Company" />
+        <JFXComboBox fx:id="comboCatogary" focusColor="#45aaf2" labelFloat="true" layoutX="469.0" layoutY="105.0" prefHeight="30.0" prefWidth="233.0" promptText="Catogary" />
+        <JFXButton fx:id="btnNew" contentDisplay="GRAPHIC_ONLY" layoutX="485.0" layoutY="211.0" onAction="#btnNewOnAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" text="New" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/Add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="btnSave" contentDisplay="GRAPHIC_ONLY" layoutX="168.0" layoutY="211.0" onAction="#onActionSave" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/save.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="btnRemove" contentDisplay="GRAPHIC_ONLY" layoutX="273.0" layoutY="211.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" text="Remove" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/icons8_Remove_50px.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="btnUpdate" contentDisplay="GRAPHIC_ONLY" layoutX="379.0" layoutY="211.0" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #45aaf2;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/update.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="930.0" layoutY="100.0" onAction="#companyEditOnAction" prefHeight="50.0" prefWidth="52.0" style="-fx-background-radius: 100;">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/Edit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="671.0" layoutY="157.0" onAction="#searchByDateOnAction" prefHeight="37.0" prefWidth="39.0" style="-fx-background-radius: 100;">
+            <graphic>
+                <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assest/Search.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

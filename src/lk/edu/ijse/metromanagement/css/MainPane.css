@@ -1,0 +1,17 @@
+. {
+
+}
+
+.menuBottonHover:hover{
+    -fx-background-color: #676767;
+    -fx-stroke: #75bc1b;
+    -fx-stroke-width: 3pt;
+}
+
+.labelColur{
+    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
+}
+
+.jfx-button .button {
+
+}

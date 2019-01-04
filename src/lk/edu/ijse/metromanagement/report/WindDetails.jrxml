@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="WindDetails" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ead13741-dfe9-4da9-8fd9-0db665a26219">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="meto"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+  w.wetherID,
+  w.wDate,
+  w.wTime,
+  windID,
+  windDirection,
+  frceInKnots,
+  frceInKmh,
+  firstRead,
+  secondRead
+FROM wether w,wind n
+WHERE w.wetherID = n.wetherID]]>
+	</queryString>
+	<field name="wetherID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="wetherID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="wDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="wDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="wTime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="wTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="windID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="windID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<field name="windDirection" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="windDirection"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<field name="frceInKnots" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="frceInKnots"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<field name="frceInKmh" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="frceInKmh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<field name="firstRead" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="firstRead"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<field name="secondRead" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="secondRead"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wind"/>
+	</field>
+	<group name="wetherID">
+		<groupExpression><![CDATA[$F{wetherID}]]></groupExpression>
+	</group>
+	<group name="wDate">
+		<groupExpression><![CDATA[$F{wDate}]]></groupExpression>
+	</group>
+	<group name="wTime">
+		<groupExpression><![CDATA[$F{wTime}]]></groupExpression>
+	</group>
+	<group name="windID">
+		<groupExpression><![CDATA[$F{windID}]]></groupExpression>
+	</group>
+	<group name="windDirection">
+		<groupExpression><![CDATA[$F{windDirection}]]></groupExpression>
+	</group>
+	<group name="frceInKnots">
+		<groupExpression><![CDATA[$F{frceInKnots}]]></groupExpression>
+	</group>
+	<group name="frceInKmh">
+		<groupExpression><![CDATA[$F{frceInKmh}]]></groupExpression>
+	</group>
+	<group name="firstRead">
+		<groupExpression><![CDATA[$F{firstRead}]]></groupExpression>
+	</group>
+	<group name="secondRead">
+		<groupExpression><![CDATA[$F{secondRead}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="580" y="0" width="222" height="30" forecolor="#FFBB00" uuid="7a7a0395-b9b7-46d6-a757-5e6b49d95662"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<leftPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<bottomPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<rightPen lineWidth="1.0" lineColor="#DBDBDB"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="580" y="30" width="222" height="30" forecolor="#FFBB00" uuid="e690cf33-bed2-4043-bf80-c02869c3abb9"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<leftPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<bottomPen lineWidth="1.0" lineColor="#DBDBDB"/>
+					<rightPen lineWidth="1.0" lineColor="#DBDBDB"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="580" height="60" forecolor="#0077FF" uuid="06b46787-897f-48bf-9ba0-d8684c88b1af"/>
+				<box leftPadding="12">
+					<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="37"/>
+				</textElement>
+				<text><![CDATA[Wind State Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="30" forecolor="#006AFF" uuid="52f36a9d-a302-4cfc-aa96-bdbd100c98dc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="74ddf5b7-9519-4966-86cc-58bbb4849c63"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[wetherID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="89" height="30" forecolor="#006AFF" uuid="8dc8f5ea-1fdb-4786-b1d0-cf964899751b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d11aff2-6405-460b-8218-d53a8c532406"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[wDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="0" width="89" height="30" forecolor="#006AFF" uuid="74f9f414-e7b4-460a-b085-1ab91854b308">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d474768b-2bc8-4455-b7f6-8ceed38650ec"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[wTime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="0" width="89" height="30" forecolor="#006AFF" uuid="9ea0203c-85ba-4861-bf54-60e44c99530a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8ebc059-c250-4b6b-b6ec-1de5e7b30564"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[windID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="0" width="89" height="30" forecolor="#006AFF" uuid="f389e387-0b25-4781-b000-bb2473293b4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4529e322-59d9-455f-aa46-308242b47d34"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[windDirection]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="0" width="89" height="30" forecolor="#006AFF" uuid="b639019c-b869-4795-bfb4-c186249190d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffb363f4-bf3a-4254-88c8-7c9763218a1e"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[frceInKnots]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="535" y="0" width="89" height="30" forecolor="#006AFF" uuid="bdbaab8d-e747-4790-bd54-aeaace8dc0a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2fc76fe7-0b75-422b-a709-ee2b069e0440"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[frceInKmh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="624" y="0" width="89" height="30" forecolor="#006AFF" uuid="5710b8e1-a067-492a-a0b8-d90429af960d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="229e74c9-3ffe-41ff-9565-e383aa3aff7c"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[firstRead]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="713" y="0" width="89" height="30" forecolor="#006AFF" uuid="3f36977b-d315-4a8b-adc6-ce0a496f1fc5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e10cb3e0-7b08-49f9-a176-7e07c70f7c50"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#878787"/>
+					<leftPen lineWidth="1.0" lineColor="#878787"/>
+					<bottomPen lineWidth="1.0" lineColor="#878787"/>
+					<rightPen lineWidth="1.0" lineColor="#878787"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[secondRead]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="90" height="30" forecolor="#FFC400" uuid="776c6dbf-7ac8-47cc-bf87-13a0f28ef399">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="74ddf5b7-9519-4966-86cc-58bbb4849c63"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wetherID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="89" height="30" forecolor="#FFC400" uuid="eb9a65ec-13b1-482c-878e-7ca49e800862">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d11aff2-6405-460b-8218-d53a8c532406"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="0" width="89" height="30" forecolor="#FFC400" uuid="0011f4fc-a2d6-411d-a6a1-5dfede555f8b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d474768b-2bc8-4455-b7f6-8ceed38650ec"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="0" width="89" height="30" forecolor="#FFC400" uuid="d34f7330-0730-4085-b96d-a9b3655fac7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8ebc059-c250-4b6b-b6ec-1de5e7b30564"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{windID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="0" width="89" height="30" uuid="35b036e8-80de-4184-935f-ededa5c7c585">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4529e322-59d9-455f-aa46-308242b47d34"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{windDirection}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="0" width="89" height="30" uuid="7c40e2f7-4912-4400-8243-fc30c628197c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffb363f4-bf3a-4254-88c8-7c9763218a1e"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{frceInKnots}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="0" width="89" height="30" uuid="c5717055-cd0c-476f-b5cf-1f2d4feae5c0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2fc76fe7-0b75-422b-a709-ee2b069e0440"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{frceInKmh}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="624" y="0" width="89" height="30" uuid="f6bda109-4ff5-42d2-9540-7feb45c5f38b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="229e74c9-3ffe-41ff-9565-e383aa3aff7c"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{firstRead}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="713" y="0" width="89" height="30" uuid="9964ba7f-e52b-403f-ae7e-9297b712a963">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e10cb3e0-7b08-49f9-a176-7e07c70f7c50"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{secondRead}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

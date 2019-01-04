@@ -1,0 +1,247 @@
+drop DATABASE metomgt;
+
+create DATABASE metomgt;
+
+use metomgt;
+
+Create TABLE mts_user(
+user_id varchar(20),
+name varchar(100) not null,
+address varchar(100) not null,
+telephone varchar(11) not null,
+other_details varchar(200),
+userName varchar(100) not null,
+email varchar(100) not null,
+password varchar(100) not null,
+CONSTRAINT PRIMARY KEY(user_id)
+);
+
+CREATE TABLE registration(
+reg_id varchar(10),
+user_id  varchar(20) not null,
+r_date date,
+CONSTRAINT PRIMARY KEY(reg_id),
+CONSTRAINT FOREIGN KEY(user_id) REFERENCES mts_user(user_id)
+ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE attendance(
+att_id varchar(10),
+att_date date,
+att_time TIME,
+reg_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(att_id),
+CONSTRAINT FOREIGN KEY(reg_id) REFERENCES registration(reg_id)
+);
+
+CREATE TABLE wether(
+w_id varchar(10),
+w_detail varchar(100),
+reg_id varchar(10),
+CONSTRAINT PRIMARY KEY(w_id),
+CONSTRAINT FOREIGN KEY(reg_id) REFERENCES registration(reg_id)
+);
+
+CREATE TABLE w_catogary(
+cat_id varchar(10),
+c_descrioption varchar(100)not null,
+CONSTRAINT PRIMARY KEY(cat_id)
+);
+
+CREATE TABLE wether_detail(
+
+cat_id varchar(10)not null,
+w_id varchar(10)not null,
+CONSTRAINT FOREIGN KEY(cat_id) REFERENCES w_catogary(cat_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE barometer(
+baro_id varchar(10),
+attd_ther DECIMAL(5,1),
+as_read_inch DECIMAL(5,1),
+mbs_level DECIMAL(5,1),
+nearst_mbs_level DECIMAL(5,1),
+baro_td_type int(1),
+baro_tendency int(5),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(baro_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE temp_as_read(
+tsr_id varchar(10),
+cur_dry int(5),
+cur_wet int(5),
+max_dry int(5),
+max_wet int(5),
+min_dry int(5),
+min_wet int(5),
+min_on_gras int(5),
+ar_max_dry int(5),
+ar_max_wet int(5),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(tsr_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE temp_indx_crtd(
+indxc_id varchar(10),
+cur_dry int(5),
+cur_wet int(5),
+max_dry int(5),
+max_wet int(5),
+min_dry int(5),
+min_wet int(5),
+min_on_gras int(5),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(indxc_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE dew_point(
+dew_id varchar(10),
+dc_temp int(5),
+max_dc_temps int(5),
+min_dc_temps int(5),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(dew_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE humidity(
+h_id varchar(10),
+visibility varchar(10),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(h_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE vapour_pressure(
+vp_id varchar(10),
+cur_pressure int(5),
+max_temp int(5),
+min_temp int(5),
+h_id varchar(10) not null,
+CONSTRAINT PRIMARY KEY(vp_id),
+CONSTRAINT FOREIGN KEY(h_id) REFERENCES humidity(h_id)
+);
+
+CREATE TABLE relative_humidity(
+rh_id varchar(10),
+r_cur_pressure int(5),
+r_max_temp int(5),
+r_min_prs int(5),
+h_id varchar(10) not null,
+CONSTRAINT PRIMARY KEY(rh_id),
+CONSTRAINT FOREIGN KEY(h_id) REFERENCES humidity(h_id)
+);
+
+CREATE TABLE wind(
+wind_id varchar(10),
+wnd_direction varchar(10),
+mileage_pre varchar(10),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(wind_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE wind_meter(
+wm_id varchar(10),
+first_reading int(10),
+second_reading int(10),
+wind_id varchar(10),
+CONSTRAINT PRIMARY KEY(wm_id),
+CONSTRAINT FOREIGN KEY(wind_id) REFERENCES wind(wind_id)
+);
+
+CREATE TABLE wind_force(
+wf_id varchar(10),
+kmh_value int(5),
+knots_value int(5),
+wind_id varchar(10),
+CONSTRAINT PRIMARY KEY(wf_id),
+CONSTRAINT FOREIGN KEY(wind_id) REFERENCES wind(wind_id)
+);
+
+CREATE TABLE cloud(
+c_id varchar(10),
+total_amount int(10),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(c_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE low_level_c(
+lc_id varchar(10),
+lc_amount int(10),
+lc_form varchar(10),
+lc_direction int(3),
+c_id varchar(10),
+CONSTRAINT PRIMARY KEY(lc_id),
+CONSTRAINT FOREIGN KEY(c_id) REFERENCES cloud(c_id)
+);
+
+CREATE TABLE medium_level_c(
+mc_id varchar(10),
+mc_amount int(10),
+mc_form varchar(10),
+mc_direction int(3),
+c_id varchar(10),
+CONSTRAINT PRIMARY KEY(mc_id),
+CONSTRAINT FOREIGN KEY(c_id) REFERENCES cloud(c_id)
+);
+
+CREATE TABLE high_level_c(
+hc_id varchar(10),
+hc_amount int(10),
+hc_form varchar(10),
+hc_direction int(3),
+c_id varchar(10),
+CONSTRAINT PRIMARY KEY(hc_id),
+CONSTRAINT FOREIGN KEY(c_id) REFERENCES cloud(c_id)
+);
+
+CREATE TABLE rain(
+rain_id varchar(10),
+last_Obs DECIMAL(5,1),
+last_rout DECIMAL(5,1),
+pre_800 DECIMAL(5,1),
+jan_1st DECIMAL(5,1),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(rain_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE sea_state(
+ss_id varchar(10),
+sea_codefigure varchar(100),
+swell_codefigure varchar(100),
+w_id varchar(10)not null,
+CONSTRAINT PRIMARY KEY(ss_id),
+CONSTRAINT FOREIGN KEY(w_id) REFERENCES wether(w_id)
+);
+
+CREATE TABLE company(
+company_id varchar(10),
+c_name varchar(100),
+c_address varchar(100),
+c_tp_number varchar(12),
+CONSTRAINT PRIMARY KEY(company_id)
+);
+
+CREATE TABLE device(
+d_id varchar(10),
+descrioption varchar(100),
+warrenty_pr varchar(100),
+reg_date date,
+cat_id varchar(10),
+company_id varchar(10),
+CONSTRAINT PRIMARY KEY(d_id),
+CONSTRAINT FOREIGN KEY(cat_id) REFERENCES w_catogary(cat_id),
+CONSTRAINT FOREIGN KEY(company_id) REFERENCES company(company_id)
+);
+
+
+
+

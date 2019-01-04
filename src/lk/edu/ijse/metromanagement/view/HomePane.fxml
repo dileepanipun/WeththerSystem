@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1215.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.HomePaneController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="1213.0" style="-fx-background-color: #4D4D4D;">
+         <children>
+            <Label layoutX="40.0" layoutY="1.0" prefHeight="40.0" prefWidth="253.0" text="Meto Management System - Galle Meto Center" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConBoo" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/LogoIconFinal.png" />
+               </image>
+            </ImageView>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="1170.0" minHeight="20.0" onAction="#btnCloserOnAction" prefHeight="40.0" prefWidth="43.0" textFill="RED">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Close_Window_50px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnMinimize" contentDisplay="GRAPHIC_ONLY" layoutX="1125.0" minHeight="20.0" onAction="#btnMinimizeOnAction" prefHeight="40.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Minimize_Window_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="txtDate" layoutX="802.0" prefHeight="40.0" text="0000/00/00" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConBoo" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTime" layoutX="688.0" prefHeight="40.0" text="00:00:00 AM" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConBoo" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="782.0" layoutY="6.0" orientation="VERTICAL" prefHeight="29.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="41.0" prefHeight="606.0" prefWidth="130.0" style="-fx-background-color: #5D5D5D;">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="27.0" onAction="#btnDashBoardOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Combo_Chart_52px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="77.0" onAction="#btnSynopOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Informatics_104px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="127.0" onAction="#btnDeviceOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Tasks_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="177.0" onAction="#btnUserOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_User_Account_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="228.0" onAction="#btnReportsOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Todo_List_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="278.0" onAction="#btnSearchOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Search_104px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="328.0" onAction="#btnInfoOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/icons8_Info_Popup_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="378.0" onAction="#btnLogoutOnAction" prefHeight="50.0" prefWidth="130.0" stylesheets="@../css/MainPane.css" text="Button" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/logout_default.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menuBottonHover" />
+                  <String fx:value="manueButtons" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="476.0" prefHeight="72.0" prefWidth="123.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelLoader" layoutX="130.0" layoutY="42.0" prefHeight="605.0" prefWidth="1085.0" style="-fx-background-color: #FFFFFF;" />
+   </children>
+</AnchorPane>

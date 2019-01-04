@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SeaStateDetails" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="54fb46d7-cc5d-4ee3-afc9-c7a548181681">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="meto"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+  w.wetherID,
+  w.wDate,
+  w.wTime,
+  seaStateID,
+  seaCodeFigure,
+  swellCodeFigure,
+  c.wValue,
+  c.w1Value,
+  c.wwValue
+FROM wether w,seastate c
+WHERE w.wetherID = c.wetherID]]>
+	</queryString>
+	<field name="wetherID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="wetherID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="wDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="wDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="wTime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="wTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="wether"/>
+	</field>
+	<field name="seaStateID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="seaStateID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<field name="seaCodeFigure" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="seaCodeFigure"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<field name="swellCodeFigure" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="swellCodeFigure"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<field name="wValue" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="wValue"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<field name="w1Value" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="w1Value"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<field name="wwValue" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="wwValue"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seastate"/>
+	</field>
+	<group name="wetherID">
+		<groupExpression><![CDATA[$F{wetherID}]]></groupExpression>
+	</group>
+	<group name="wDate">
+		<groupExpression><![CDATA[$F{wDate}]]></groupExpression>
+	</group>
+	<group name="wTime">
+		<groupExpression><![CDATA[$F{wTime}]]></groupExpression>
+	</group>
+	<group name="seaStateID">
+		<groupExpression><![CDATA[$F{seaStateID}]]></groupExpression>
+	</group>
+	<group name="seaCodeFigure">
+		<groupExpression><![CDATA[$F{seaCodeFigure}]]></groupExpression>
+	</group>
+	<group name="swellCodeFigure">
+		<groupExpression><![CDATA[$F{swellCodeFigure}]]></groupExpression>
+	</group>
+	<group name="wValue">
+		<groupExpression><![CDATA[$F{wValue}]]></groupExpression>
+	</group>
+	<group name="w1Value">
+		<groupExpression><![CDATA[$F{w1Value}]]></groupExpression>
+	</group>
+	<group name="wwValue">
+		<groupExpression><![CDATA[$F{wwValue}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

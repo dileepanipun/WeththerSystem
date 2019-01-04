@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1085.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.ReportsPaneController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1085.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/backgroundAbcstrackt.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="330.0" styleClass="labelColur" stylesheets="@../css/ReprotPane.css" text="Main Reports">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXButton layoutX="41.0" layoutY="62.0" onAction="#todayBarometer" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.3;" text="Today Barometer Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="41.0" layoutY="106.0" onAction="#todayThermometer" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Thermometer Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="42.0" layoutY="152.0" onAction="#todayHumidity" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Humidity Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="40.0" layoutY="196.0" onAction="#todayRain" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Rain Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="41.0" layoutY="242.0" onAction="#todayWind" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Wind Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="39.0" layoutY="286.0" onAction="#todayCloud" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Cloud Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="39.0" layoutY="330.0" onAction="#todaySea" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Today Sea state Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnLastWReprot" layoutX="40.0" layoutY="374.0" onAction="#lastWetherReport" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Last Wether Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnWeekReport" layoutX="39.0" layoutY="419.0" onAction="#weekReport" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Week Report" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </JFXButton>
+      <Label layoutX="361.0" layoutY="20.0" prefHeight="30.0" prefWidth="330.0" styleClass="labelColur" stylesheets="@../css/ReprotPane.css" text="Machine Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXButton layoutX="382.0" layoutY="107.0" onAction="#barometerMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Barometers" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="380.0" layoutY="153.0" onAction="#thermometerMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Thermometers" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="380.0" layoutY="198.0" onAction="#rainMeterMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Rain Meter Machines" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="382.0" layoutY="62.0" onAction="#allMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="All Machines" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="380.0" layoutY="244.0" onAction="#windMeterMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Wind Speed Meter Machines" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="380.0" layoutY="290.0" onAction="#seaStateMachines" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Sea State Count Machines" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="698.0" layoutY="19.0" prefHeight="30.0" prefWidth="330.0" styleClass="labelColur" stylesheets="@../css/ReprotPane.css" text="Other Reports">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <JFXButton layoutX="713.0" layoutY="61.0" onAction="#allMemebers" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="All Members" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="713.0" layoutY="194.0" onAction="#allCompany" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="All Company" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="713.0" layoutY="104.0" onAction="#allMemebers" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Synop Coaders" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="713.0" layoutY="150.0" onAction="#allMemebers" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #45aaf2; -fx-border-color: gray; -fx-border-radius: 3; -fx-border-width: 0.5;" text="Employees" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

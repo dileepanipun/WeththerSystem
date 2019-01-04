@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="874.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.RainandSeaPaneController">
+   <children>
+      <Label layoutX="7.0" layoutY="8.0" prefHeight="30.0" prefWidth="862.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Rain As Read" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="69.0" layoutY="44.0" prefHeight="30.0" prefWidth="137.0" text="Since last Observation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="86.0" prefHeight="30.0" prefWidth="192.0" text="Since Last Routine Observation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="139.0" prefHeight="30.0" prefWidth="156.0" text="Since Previouse 08.30 hrs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="181.0" prefHeight="30.0" prefWidth="105.0" text="From January 1st">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRain_SinceLOB" layoutX="316.0" layoutY="39.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRain_LRO" layoutX="316.0" layoutY="82.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRain_PreHrs" layoutX="316.0" layoutY="133.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRain_FromJanuaray" layoutX="316.0" layoutY="176.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="20.0" layoutY="44.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="139.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="84.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="180.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="822.0" layoutY="8.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="closeButton" />
+            <String fx:value="closeButtonPressed" />
+         </styleClass>
+      </JFXButton>
+      <Label layoutX="7.0" layoutY="218.0" prefHeight="30.0" prefWidth="426.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="State Of Sea" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="79.0" layoutY="254.0" prefHeight="30.0" prefWidth="134.0" text="Sea Code Figure">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="296.0" prefHeight="30.0" prefWidth="144.0" text="Swell Code Figure">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCodeFigure_Sea" layoutX="309.0" layoutY="249.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCodeFigure_Swell" layoutX="309.0" layoutY="291.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="29.0" layoutY="252.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="295.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="451.0" layoutY="50.0" prefHeight="30.0" prefWidth="423.0" text="Wether Remarks">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="84.0" prefHeight="30.0" prefWidth="413.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Sea" textFill="#4d574a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="459.0" layoutY="131.0" prefHeight="20.0" prefWidth="399.0" text="Note here in sysbols the occunence of phenomena such as gale,">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="199.0" prefHeight="30.0" prefWidth="203.0" text="Past-since previouse observation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtWetherRemarks_PSRO" layoutX="745.0" layoutY="224.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="459.0" layoutY="165.0" prefHeight="20.0" prefWidth="403.0" text="dustfog, haze, for or mist, dew, forst, tain, snow, ect. with">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="236.0" prefHeight="20.0" prefWidth="169.0" text="W &amp; W1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtWetherRemarks_PObs" layoutX="744.0" layoutY="262.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="501.0" layoutY="270.0" prefHeight="30.0" prefWidth="125.0" text="Present Observation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="148.0" prefHeight="20.0" prefWidth="393.0" text="squall hall, thunder, lightning, duststorm ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="184.0" prefHeight="20.0" prefWidth="404.0" text="times of commencement and cessation.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="229.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="272.0" prefHeight="30.0" prefWidth="39.0" text="[ 03 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="743.0" layoutY="8.0" minHeight="30.0" onAction="#updateOnAction" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

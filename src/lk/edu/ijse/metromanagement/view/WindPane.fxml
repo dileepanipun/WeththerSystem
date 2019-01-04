@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="423.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.WindPaneController">
+   <children>
+      <Label layoutX="7.0" layoutY="6.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Wind Values">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="70.0" layoutY="49.0" prefHeight="25.0" prefWidth="126.0" text="Wind Direction">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="windDrectionTxt" layoutX="293.0" layoutY="40.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="6.0" layoutY="84.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Meter">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="69.0" layoutY="126.0" prefHeight="25.0" prefWidth="153.0" text="FIrst Reading">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="173.0" prefHeight="25.0" prefWidth="153.0" text="Second Reading">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="meterFirstReadTxt" layoutX="294.0" layoutY="117.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="meterSecReadTxt" layoutX="293.0" layoutY="166.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="5.0" layoutY="207.0" prefHeight="32.0" prefWidth="410.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Force">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="70.0" layoutY="248.0" prefHeight="32.0" prefWidth="126.0" text="In Km/h">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="forceInKmhTxt" layoutX="293.0" layoutY="242.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="70.0" layoutY="288.0" prefHeight="32.0" prefWidth="103.0" text="In Knots">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="326.0" prefHeight="32.0" prefWidth="211.0" text="Milage Since Previouse 8:30 hrs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="forceInKnotsTxt" layoutX="294.0" layoutY="284.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="milagePreTxt" layoutX="295.0" layoutY="322.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="19.0" layoutY="124.0" prefHeight="30.0" prefWidth="39.0" text="[ 35 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="47.0" prefHeight="30.0" prefWidth="39.0" text="[ 34 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="170.0" prefHeight="30.0" prefWidth="39.0" text="[ 36 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="249.0" prefHeight="30.0" prefWidth="39.0" text="[ 37 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="288.0" prefHeight="30.0" prefWidth="39.0" text="[ 38 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="326.0" prefHeight="30.0" prefWidth="39.0" text="[ 39 ]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="6.0" onAction="#onActionClose" prefHeight="32.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="RED">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="closeButton" />
+            <String fx:value="closeButtonPressed" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton id="btnUpdate" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="358.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="410.0" style="-fx-background-color: #45aaf2;" stylesheets="@../css/BarometerPane.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
