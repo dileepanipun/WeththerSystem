@@ -1744,3 +1744,261 @@ Jul 29, 2018 11:45:24 AM javafx.fxml.FXMLLoader$ValueElement processValue
 WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
 Jul 29, 2018 11:45:39 AM javafx.fxml.FXMLLoader$ValueElement processValue
 WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:25:21 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:27:21 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:27:21 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:28:19 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:29:54 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:29:54 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:30:00 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:30:00 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:30:02 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:30:17 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:30:26 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:30:33 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:30:43 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:31:31 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:36:36 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:37:08 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:37:08 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:37:11 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:41:12 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:41:21 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:41:21 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:41:27 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:42:15 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:42:31 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:42:31 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:42:33 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:42:46 PM net.sf.jasperreports.extensions.DefaultExtensionsRegistry loadRegistries
+WARNING: Extension resource jar:file:/E:/Libraries/jasperreports-javaflow-6.4.3.jar!/jasperreports_extension.properties was found to be a duplicate of jar:file:/E:/Libraries/jasperreports-6.4.3.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+Dec 03, 2018 3:43:30 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:43:30 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:44:51 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:44:51 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/CompanyPane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:45:26 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:45:27 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:45:28 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:47:48 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:47:50 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:47:50 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Dec 03, 2018 3:47:51 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:48:51 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:49:16 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 03, 2018 3:49:16 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 12, 2018 2:23:48 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:06:15 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:06:31 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:06:31 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:06:59 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:01 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:07 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:08 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Dec 15, 2018 11:07:10 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:10 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Dec 15, 2018 11:07:12 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:13 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:07:13 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Dec 15, 2018 11:07:15 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:19:05 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:19:20 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:19:20 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:19:23 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 15, 2018 11:19:27 AM net.sf.jasperreports.extensions.DefaultExtensionsRegistry loadRegistries
+WARNING: Extension resource jar:file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/libraries/jasper_reports/jasperreports-javaflow-6.4.3.jar!/jasperreports_extension.properties was found to be a duplicate of jar:file:/E:/Projects/InteliljIDE%20Projects/Metro%20Management%20System%20Project/libraries/jasper_reports/jasperreports-6.4.3.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+Dec 16, 2018 3:15:29 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:15:54 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:15:54 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:16:01 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:17:09 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:17:09 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Dec 16, 2018 3:17:18 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:17:19 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Dec 16, 2018 3:18:28 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:18:28 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Dec 16, 2018 3:18:29 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:18:44 PM net.sf.jasperreports.extensions.DefaultExtensionsRegistry loadRegistries
+WARNING: Extension resource jar:file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/libraries/jasper_reports/jasperreports-javaflow-6.4.3.jar!/jasperreports_extension.properties was found to be a duplicate of jar:file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/libraries/jasper_reports/jasperreports-6.4.3.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+Dec 16, 2018 3:18:58 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:19:02 PM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 16, 2018 3:19:02 PM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Dec 19, 2018 8:21:15 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 19, 2018 8:21:29 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 19, 2018 8:21:29 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 19, 2018 8:21:33 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 19, 2018 8:21:34 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Dec 19, 2018 8:21:41 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 19, 2018 8:21:42 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Dec 20, 2018 2:29:24 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 20, 2018 2:29:44 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 20, 2018 2:29:44 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 20, 2018 2:29:49 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Dec 20, 2018 2:29:50 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 9:54:45 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:55:03 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:55:03 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:55:14 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:55:15 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:55:59 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:56:00 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 9:56:57 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:56:59 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:56:59 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 9:57:04 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:57:06 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:57:06 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 9:57:21 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 9:57:21 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 10:07:28 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:07:41 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:07:41 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:07:54 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:29:02 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:29:13 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:29:55 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:29:55 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:29:59 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:31:20 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:31:21 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:31:21 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 10:31:36 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 10:31:36 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/CompanyPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 11:27:48 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:03 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:03 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:07 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:13 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:13 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 11:28:14 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:14 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/UserPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 11:28:17 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:17 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/DevicePane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 11:28:20 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141
+Jan 05, 2019 11:28:20 AM com.sun.javafx.css.parser.CSSParser parse
+WARNING: CSS Error parsing file:/E:/Projects/git%20Projects/Wether%20System%20(Single%20User)/out/production/Metro%20Management%20System%20Project/lk/edu/ijse/metromanagement/css/SearchPane.css: Expected LBRACE at [-1,-1]
+Jan 05, 2019 11:28:20 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.141

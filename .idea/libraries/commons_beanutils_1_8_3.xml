@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.3">
+    <CLASSES>
+      <root url="jar://E:/Libraries/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://E:/Libraries/controlsfx-8.40.14.jar!/" />
+      <root url="jar://E:/Libraries/controlsfx-samples-8.40.14.jar!/" />
+      <root url="jar://E:/Libraries/org.apache.commons.collections.jar!/" />
+      <root url="jar://E:/Libraries/jasperreports-6.4.3.jar!/" />
+      <root url="jar://E:/Libraries/commons-digester-2.1.jar!/" />
+      <root url="jar://E:/Libraries/fxsampler-1.0.10.jar!/" />
+      <root url="jar://E:/Libraries/org-apache-commons-logging.jar!/" />
+      <root url="jar://E:/Libraries/jasperreports-javaflow-6.4.3.jar!/" />
+      <root url="jar://E:/Libraries/itextpdf-5.3.4.jar!/" />
+      <root url="jar://E:/Libraries/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://E:/Libraries/jcommon-1.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

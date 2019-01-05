@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="com.lowagie.text-2.1.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/fxsampler-1.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/itextpdf-5.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/jasperreports-6.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/jasperreports-javaflow-6.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/jcommon-1.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/org-apache-commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/org.apache.commons.collections.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libraries/jasper_reports/itext-2.1.7-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

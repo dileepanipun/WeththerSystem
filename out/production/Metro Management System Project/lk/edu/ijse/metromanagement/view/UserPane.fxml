@@ -25,18 +25,8 @@
             <Image url="@../assest/backgroundAbcstrackt.png" />
          </image>
       </ImageView>
-      <Label layoutX="7.0" layoutY="52.0" opacity="0.74" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="193.0" layoutY="52.0" opacity="0.74" prefHeight="34.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="410.0" layoutY="52.0" opacity="0.74" prefHeight="34.0" prefWidth="184.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="19.0" layoutY="109.0" opacity="0.74" prefHeight="34.0" prefWidth="333.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="19.0" layoutY="158.0" opacity="0.74" prefHeight="34.0" prefWidth="333.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="20.0" layoutY="209.0" opacity="0.74" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="21.0" layoutY="255.0" opacity="0.74" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="359.0" layoutY="200.0" opacity="0.74" prefHeight="87.0" prefWidth="171.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="358.0" layoutY="109.0" opacity="0.74" prefHeight="34.0" prefWidth="184.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="358.0" layoutY="158.0" opacity="0.74" prefHeight="34.0" prefWidth="184.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="605.0" layoutY="107.0" opacity="0.74" prefHeight="34.0" prefWidth="212.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="605.0" layoutY="175.0" opacity="0.74" prefHeight="34.0" prefWidth="212.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="7.0" layoutY="39.0" opacity="0.74" prefHeight="50.0" prefWidth="889.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="8.0" layoutY="93.0" opacity="0.74" prefHeight="203.0" prefWidth="889.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
       <JFXTextField fx:id="txtUserID" editable="false" focusColor="#45aaf2" labelFloat="true" layoutX="15.0" layoutY="52.0" promptText="User ID">
          <font>
             <Font name="Calibri" size="14.0" />
@@ -112,7 +102,6 @@
             <Font name="Calibri" size="14.0" />
          </font>
       </JFXTextField>
-      <Separator layoutX="13.0" layoutY="85.0" prefHeight="11.0" prefWidth="870.0" />
       <Separator layoutX="13.0" layoutY="292.0" prefHeight="11.0" prefWidth="870.0" />
       <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="62.0" onAction="#btnSaveOnAction" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #45aaf2;" text="New" textFill="WHITE">
          <font>

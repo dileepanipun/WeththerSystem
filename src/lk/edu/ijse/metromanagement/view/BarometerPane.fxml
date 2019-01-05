@@ -58,7 +58,7 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="5.0" layoutY="4.0" prefHeight="30.0" prefWidth="422.0" style="-fx-background-color: #2bcbba;" text="Barometer Values">
+      <Label layoutX="5.0" layoutY="4.0" prefHeight="35.0" prefWidth="422.0" style="-fx-background-color: #45aaf2;" text="Barometer Values" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

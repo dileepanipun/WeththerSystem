@@ -1,8 +1,44 @@
-.btnHover:hover{
-    -fx-border-color : #a5b1c2;
-    -fx-border-radius: 5;
+
+.back{
+    -fx-background-color: gray;
 }
 
-.btnDefault:default{
-    -fx-border-radius: 16;
+.stage{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(68, 70, 63, 0.65), 15, 0, 0, 0);
+    -fx-font-family: Roboto;
+}
+
+.login_button{
+    -fx-background-color: #5774F6;
+    /*-fx-background-image: linear-gradient(to bottom right, #2bcbba, #3fff00);*/
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 16px;
+    -fx-pref-height: 45px;
+    -fx-font-weight: bold;
+}
+
+.login_button:hover{
+    -fx-background-color: #4157b4;
+}
+
+.cancel_button{
+    -fx-background-color: #d8d8d8;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 16px;
+    -fx-pref-height: 45px;
+    -fx-font-weight: bold;
+    -fx-text-fill: gray;
+}
+
+.cancel_button:hover{
+    -fx-background-color: #5a5c56;
+    -fx-text-fill: white;
 }

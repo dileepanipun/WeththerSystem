@@ -24,11 +24,8 @@
             <Image url="@../assest/backgroundAbcstrackt.png" />
          </image>
       </ImageView>
-      <Label layoutX="16.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="187.0" layoutY="52.0" opacity="0.74" prefHeight="34.0" prefWidth="181.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="377.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="181.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="564.0" layoutY="51.0" opacity="0.74" prefHeight="34.0" prefWidth="173.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <JFXTabPane fx:id="tabPane" layoutX="5.0" layoutY="84.0" prefHeight="521.0" prefWidth="908.0" stylesheets="@../css/SynopDataPane.css" tabClosingPolicy="ALL_TABS">
+      <Label layoutX="916.0" layoutY="70.0" opacity="0.74" prefHeight="265.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <JFXTabPane fx:id="tabPane" layoutX="8.0" layoutY="63.0" prefHeight="521.0" prefWidth="908.0" stylesheets="@../css/SynopDataPane.css" tabClosingPolicy="ALL_TABS">
          <tabs>
             <Tab text="Barometer ">
                <graphic>
@@ -1320,9 +1317,10 @@
          <styleClass>
             <String fx:value="headers-region" />
             <String fx:value="jfx-tab-pane" />
+            <String fx:value="tabpane" />
          </styleClass>
       </JFXTabPane>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="232.0" onAction="#btnSaveOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="926.0" layoutY="462.0" onAction="#btnSaveOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -1340,7 +1338,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="292.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" textFill="WHITE">
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="926.0" layoutY="520.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -1358,7 +1356,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="174.0" onAction="#BtnPreviewOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="926.0" layoutY="404.0" onAction="#BtnPreviewOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45aaf2;" text="Button" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -1376,14 +1374,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXTextField fx:id="txtWetherID" labelFloat="true" layoutX="24.0" layoutY="50.0" prefHeight="30.0" prefWidth="152.0" promptText="Wether ID">
+      <JFXTextField fx:id="txtWetherID" labelFloat="true" layoutX="928.0" layoutY="92.0" prefHeight="30.0" prefWidth="150.0" promptText="Wether ID">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXDatePicker fx:id="dateTodayDate" defaultColor="#03bca9" editable="false" layoutX="194.0" layoutY="48.0" prefHeight="32.0" prefWidth="173.0" promptText="Date" styleClass="jfx-date-picker" stylesheets="@../css/SynopDataPane.css" />
-      <JFXComboBox fx:id="comboTImePerioud" layoutX="388.0" layoutY="49.0" prefHeight="32.0" prefWidth="152.0" promptText="TIme Perioud" />
-      <JFXTextField fx:id="txtRegID" labelFloat="true" layoutX="571.0" layoutY="50.0" promptText="Regisrer ID">
+      <JFXDatePicker fx:id="dateTodayDate" defaultColor="#03bca9" editable="false" layoutX="928.0" layoutY="157.0" prefHeight="32.0" prefWidth="150.0" promptText="Date" styleClass="jfx-date-picker" stylesheets="@../css/SynopDataPane.css" />
+      <JFXComboBox fx:id="comboTImePerioud" layoutX="928.0" layoutY="218.0" prefHeight="32.0" prefWidth="150.0" promptText="TIme Perioud" />
+      <JFXTextField fx:id="txtRegID" labelFloat="true" layoutX="928.0" layoutY="291.0" prefWidth="150.0" promptText="Regisrer ID">
          <font>
             <Font size="14.0" />
          </font>

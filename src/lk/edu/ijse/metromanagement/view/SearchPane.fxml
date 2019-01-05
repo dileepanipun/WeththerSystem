@@ -29,16 +29,14 @@
             <Insets left="10.0" />
          </padding>
       </Label>
-      <Label layoutX="41.0" layoutY="62.0" opacity="0.74" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="232.0" layoutY="61.0" opacity="0.74" prefHeight="34.0" prefWidth="186.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="440.0" layoutY="60.0" opacity="0.74" prefHeight="34.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <JFXTextField fx:id="txtWetherID" layoutX="47.0" layoutY="59.0" prefHeight="30.0" prefWidth="160.0" promptText="Wether ID">
+      <Label layoutX="17.0" layoutY="57.0" opacity="0.74" prefHeight="58.0" prefWidth="858.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <JFXTextField fx:id="txtWetherID" layoutX="123.0" layoutY="71.0" prefHeight="30.0" prefWidth="190.0" promptText="Wether ID">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXDatePicker fx:id="dateWetherDate" layoutX="241.0" layoutY="60.0" promptText="Date" />
-      <JFXComboBox fx:id="comboTimeZone" labelFloat="true" layoutX="447.0" layoutY="58.0" prefHeight="30.0" prefWidth="198.0" promptText="Time Zone" />
+      <JFXDatePicker fx:id="dateWetherDate" layoutX="317.0" layoutY="72.0" promptText="Date" />
+      <JFXComboBox fx:id="comboTimeZone" labelFloat="true" layoutX="502.0" layoutY="71.0" prefHeight="30.0" prefWidth="267.0" promptText="Time Zone" />
       <JFXButton layoutX="887.0" layoutY="165.0" onAction="#showBarometer" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #45aaf2; -fx-border-color: white; -fx-border-radius: 03;" text="Barometer" textFill="WHITE">
          <font>
             <Font size="14.0" />

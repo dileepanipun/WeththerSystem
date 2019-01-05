@@ -19,6 +19,7 @@ import javafx.util.Duration;
 import lk.edu.ijse.metromanagement.common.NotificationController;
 import lk.edu.ijse.metromanagement.main.Main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -66,17 +67,21 @@ public class HomePaneController implements Initializable {
     }
 
     @FXML
-    void btnLogoutOnAction(ActionEvent event) throws Exception{
+    void btnLogoutOnAction(ActionEvent event){
         ButtonType result = NotificationController.createConfigAlert();
-        if(result == ButtonType.OK){
-            AnchorPane loginPane = FXMLLoader.load(this.getClass().getResource("/lk/edu/ijse/metromanagement/view/Login.fxml"));
-            Scene scene = new Scene(loginPane);
-            Stage stage = (Stage) this.btnLogout.getScene().getWindow();
-            stage.setScene(scene);
-            stage.centerOnScreen();
-            stage.show();
-        }else {
-            NotificationController.createError("Error","Something went wrong");
+        try{
+            if(result == ButtonType.OK){
+                AnchorPane loginPane = FXMLLoader.load(this.getClass().getResource("lk/edu/ijse/metromanagement/view/Login.fxml"));
+                Scene scene = new Scene(loginPane);
+                Stage stage = (Stage) this.btnLogout.getScene().getWindow();
+                stage.setScene(scene);
+                stage.centerOnScreen();
+                stage.show();
+            }else {
+                NotificationController.createError("Error","Something went wrong");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

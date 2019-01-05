@@ -13,9 +13,9 @@
             <Image url="@../assest/backgroundAbcstrackt.png" />
          </image>
       </ImageView>
-      <Label layoutX="10.0" layoutY="145.0" opacity="0.74" prefHeight="123.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="10.0" layoutY="285.0" opacity="0.74" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
-      <Label layoutX="31.0" layoutY="470.0" opacity="0.74" prefHeight="51.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="115.0" layoutY="160.0" opacity="0.74" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="492.0" layoutY="157.0" opacity="0.74" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="386.0" layoutY="369.0" opacity="0.74" prefHeight="51.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
       <Label layoutX="10.0" layoutY="10.0" opacity="0.74" prefHeight="109.0" prefWidth="1064.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
       <Label layoutX="113.0" layoutY="73.0" text="Metro Management System">
          <font>
@@ -27,72 +27,72 @@
             <Image url="@../assest/MetoMgtTrayLOGO.png" />
          </image>
       </ImageView>
-      <Label layoutX="22.0" layoutY="151.0" text="Developed By">
+      <Label layoutX="127.0" layoutY="166.0" text="Developed By">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="178.0" text="Dileepa Nipun">
+      <Label layoutX="144.0" layoutY="193.0" text="Dileepa Nipun">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="202.0" text="DMX Softwares galle">
+      <Label layoutX="144.0" layoutY="217.0" text="DMX Softwares galle">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="220.0" text="dileepanipun@gmail.com">
+      <Label layoutX="144.0" layoutY="235.0" text="dileepanipun@gmail.com">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="240.0" text="0774482947">
+      <Label layoutX="144.0" layoutY="255.0" text="0774482947">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="24.0" layoutY="289.0" text="System Features">
+      <Label layoutX="506.0" layoutY="161.0" text="System Features">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="316.0" text="Synop Message Creating">
+      <Label layoutX="523.0" layoutY="188.0" text="Synop Message Creating">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="336.0" text="Wther reports">
+      <Label layoutX="523.0" layoutY="208.0" text="Wther reports">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="358.0" text="Online Acess">
+      <Label layoutX="523.0" layoutY="230.0" text="Online Acess">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="388.0" text="For more Details ">
+      <Label layoutX="523.0" layoutY="260.0" text="For more Details ">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="55.0" layoutY="406.0" text="metomgt.lk/info">
+      <Label layoutX="537.0" layoutY="278.0" text="metomgt.lk/info">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="22.0" layoutY="447.0" text="Follow Us by Social">
+      <Label layoutX="377.0" layoutY="346.0" text="Follow Us by Social">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="37.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="392.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/icons8_Facebook_50px.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="87.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="442.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/icons8_Instagram_50px.png" />
          </image>
@@ -117,12 +117,12 @@
             <Font name="System Italic" size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="35.0" fitWidth="28.0" layoutX="142.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="28.0" layoutX="497.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/icons8_Google_Plus_48px_1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="190.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="545.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/icons8_LinkedIn_48px.png" />
          </image>

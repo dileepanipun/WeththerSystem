@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="348.0" prefWidth="874.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.RainandSeaPaneController">
    <children>
-      <Label layoutX="7.0" layoutY="8.0" prefHeight="30.0" prefWidth="862.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Rain As Read" textFill="#4d574a">
+      <Label layoutX="7.0" layoutY="8.0" prefHeight="35.0" prefWidth="862.0" style="-fx-background-color: #45aaf2;" text="Rain As Read" textFill="#4d574a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -81,7 +81,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="822.0" layoutY="8.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="WHITE">
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="822.0" layoutY="3.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -97,7 +97,7 @@
             <String fx:value="closeButtonPressed" />
          </styleClass>
       </JFXButton>
-      <Label layoutX="7.0" layoutY="218.0" prefHeight="30.0" prefWidth="426.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="State Of Sea" textFill="#4d574a">
+      <Label layoutX="7.0" layoutY="218.0" prefHeight="30.0" prefWidth="426.0" style="-fx-background-color: #45aaf2;" text="State Of Sea" textFill="#4d574a" AnchorPane.leftAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -140,7 +140,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="450.0" layoutY="84.0" prefHeight="30.0" prefWidth="413.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Sea" textFill="#4d574a">
+      <Label layoutX="450.0" layoutY="84.0" prefHeight="30.0" prefWidth="423.0" style="-fx-background-color: #45aaf2;" text="Sea" textFill="#4d574a" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -203,7 +203,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <JFXButton layoutX="743.0" layoutY="8.0" minHeight="30.0" onAction="#updateOnAction" text="Update" textFill="WHITE">
+      <JFXButton layoutX="743.0" layoutY="3.0" minHeight="30.0" onAction="#updateOnAction" text="Update" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                <image>

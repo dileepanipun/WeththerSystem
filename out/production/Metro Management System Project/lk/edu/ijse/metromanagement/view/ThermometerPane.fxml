@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.ThermometerPaneController">
    <children>
-      <Label layoutX="6.0" layoutY="5.0" prefHeight="30.0" prefWidth="279.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature As Read">
+      <Label layoutX="6.0" layoutY="5.0" prefHeight="30.0" prefWidth="298.0" style="-fx-background-color: #45aaf2;" text="Temperature As Read" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -56,7 +56,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="5.0" layoutY="321.0" prefHeight="30.0" prefWidth="279.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature After Resetting">
+      <Label layoutX="5.0" layoutY="321.0" prefHeight="30.0" prefWidth="289.0" style="-fx-background-color: #45aaf2;" text="Temperature After Resetting" AnchorPane.leftAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -199,7 +199,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="283.0" layoutY="5.0" prefHeight="30.0" prefWidth="323.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Temperature Index Correction">
+      <Label layoutX="283.0" layoutY="5.0" prefHeight="30.0" prefWidth="323.0" style="-fx-background-color: #45aaf2;" text="Temperature Index Correction" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -242,7 +242,7 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="292.0" layoutY="308.0" prefHeight="30.0" prefWidth="316.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Dew Point Temperature">
+      <Label layoutX="292.0" layoutY="308.0" prefHeight="30.0" prefWidth="316.0" style="-fx-background-color: #45aaf2;" text="Dew Point Temperature" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -330,7 +330,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="559.0" layoutY="5.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="RED">
+      <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="559.0" layoutY="5.0" onAction="#onActionClose" prefHeight="30.0" prefWidth="47.0" stylesheets="@../css/BarometerPane.css" textFill="RED" AnchorPane.topAnchor="0.0">
          <graphic>
             <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -46,8 +46,8 @@ public class Main extends Application {
             primaryStage.initStyle(StageStyle.UNDECORATED);
             primaryStage.setScene(scene);
             primaryStage.centerOnScreen();
-            primaryStage.show();
             primaryStage.getIcons().add(new Image("/lk/edu/ijse/metromanagement/assest/LogoIconFinal.png"));
+            primaryStage.show();
         }catch (Exception e){
 
         }

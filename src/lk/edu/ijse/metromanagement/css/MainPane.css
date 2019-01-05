@@ -1,17 +1,18 @@
-. {
 
+.menuBotton{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 5px 0 0;
+    -fx-border-color: transparent;
 }
 
-.menuBottonHover:hover{
-    -fx-background-color: #676767;
-    -fx-stroke: #75bc1b;
-    -fx-stroke-width: 3pt;
+.menuBotton:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.41);
+    -fx-border-width: 0 5px 0 0;
+    -fx-border-color: white;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
 }
 
 .labelColur{
-    -fx-background-color: linear-gradient(#45aaf2 0%, #2bcbba 100%);
-}
-
-.jfx-button .button {
-
+    -fx-background-color: linear-gradient(#3178ab 0%, #208e81 100%);
 }

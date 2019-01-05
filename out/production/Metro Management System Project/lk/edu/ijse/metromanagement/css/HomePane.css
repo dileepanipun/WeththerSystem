@@ -1,0 +1,9 @@
+
+.slider{
+    /*-fx-background-color: #5774F6;*/
+    -fx-background-color: linear-gradient(to bottom right , #3888c2 0%, #27ac9b 100%);
+}
+
+.header{
+    -fx-background-color: #535a5b;
+}

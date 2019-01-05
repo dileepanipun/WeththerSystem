@@ -17,14 +17,14 @@
             <Image url="@../assest/forcastWallpaper.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="7.0" layoutY="8.0" opacity="0.25" prefHeight="585.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="628.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="403.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="403.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="628.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="854.0" layoutY="8.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="854.0" layoutY="180.0" opacity="0.25" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
-      <JFXButton layoutX="404.0" layoutY="355.0" opacity="0.25" prefHeight="238.0" prefWidth="313.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="7.0" layoutY="8.0" opacity="0.53" prefHeight="585.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="8.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="8.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="403.0" layoutY="180.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="628.0" layoutY="180.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="8.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="854.0" layoutY="180.0" opacity="0.53" prefHeight="167.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="404.0" layoutY="355.0" opacity="0.53" prefHeight="238.0" prefWidth="313.0" style="-fx-background-color: #45aaf2;" text=" " />
       <JFXButton layoutX="7.0" layoutY="208.0" opacity="0.47" prefHeight="99.0" prefWidth="390.0" style="-fx-background-color: #45aaf2;" text=" " />
       <JFXButton layoutX="403.0" layoutY="109.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
       <JFXButton layoutX="628.0" layoutY="110.0" opacity="0.47" prefHeight="66.0" prefWidth="219.0" style="-fx-background-color: #45aaf2;" text=" " />
@@ -387,7 +387,7 @@
             <Image url="@../assest/icons8_Combo_Chart_52px_1.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="724.0" layoutY="355.0" opacity="0.25" prefHeight="238.0" prefWidth="348.0" style="-fx-background-color: #45aaf2;" text=" " />
+      <JFXButton layoutX="724.0" layoutY="355.0" opacity="0.53" prefHeight="238.0" prefWidth="348.0" style="-fx-background-color: #45aaf2;" text=" " />
       <JFXButton layoutX="724.0" layoutY="379.0" opacity="0.47" prefHeight="66.0" prefWidth="348.0" style="-fx-background-color: #45aaf2;" text=" " />
       <Label layoutX="734.0" layoutY="389.0" prefHeight="47.0" prefWidth="291.0" text="Activated Devices" textFill="WHITE">
          <font>

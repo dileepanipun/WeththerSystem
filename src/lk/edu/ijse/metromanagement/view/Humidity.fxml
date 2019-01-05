@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.metromanagement.controller.HumidityPaneController">
    <children>
-      <Label layoutX="5.0" layoutY="5.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Humidity Vapour Pressure" textFill="#4d574a">
+      <Label layoutX="5.0" layoutY="5.0" prefHeight="30.0" prefWidth="418.0" style="-fx-background-color: #45aaf2;" text="Humidity Vapour Pressure" textFill="#4d574a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -47,7 +46,7 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="6.0" layoutY="160.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Relative Humidity" textFill="#4d574a">
+      <Label layoutX="6.0" layoutY="160.0" prefHeight="30.0" prefWidth="418.0" style="-fx-background-color: #45aaf2;" text="Relative Humidity" textFill="#4d574a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -85,7 +84,7 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="6.0" layoutY="305.0" prefHeight="30.0" prefWidth="418.0" styleClass="labelColur" stylesheets="@../css/SynopDataPane.css" text="Visibility Code Figure" textFill="#4d574a">
+      <Label layoutX="6.0" layoutY="305.0" prefHeight="30.0" prefWidth="418.0" style="-fx-background-color: #45aaf2;" text="Visibility Code Figure" textFill="#4d574a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
